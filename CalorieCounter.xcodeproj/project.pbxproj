@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1933D9CD6FE2F6E64091D323 /* Pods_CalorieCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67B18007E4AC64E3DFC150A /* Pods_CalorieCounter.framework */; };
 		1E5511E3478187F70E6F18C5 /* Pods_CalorieCounterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABE86F6210F2297BED5C258 /* Pods_CalorieCounterUITests.framework */; };
+		D11D2E77211AB27700CF4C44 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D2E76211AB27700CF4C44 /* PopupView.swift */; };
+		D11D2E79211AB4ED00CF4C44 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */; };
 		D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D16B0834211A2010009E9877 /* Food101.mlmodel */; };
 		D1BB0304211A0BD200E9E79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0303211A0BD200E9E79C /* AppDelegate.swift */; };
 		D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0305211A0BD200E9E79C /* ViewController.swift */; };
@@ -46,6 +48,27 @@
 		5C067CCB9B9E923E95CA9ED3 /* Pods-CalorieCounterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterUITests/Pods-CalorieCounterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83FB20775576E0FC987A7505 /* Pods-CalorieCounterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterUITests/Pods-CalorieCounterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AABE86F6210F2297BED5C258 /* Pods_CalorieCounterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11D2E76211AB27700CF4C44 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		D13E6160211AAABB008D48C5 /* HKGrotesk-RegularLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-RegularLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6161211AAABB008D48C5 /* HKGrotesk-LightItalicLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-LightItalicLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6162211AAABC008D48C5 /* HKGrotesk-ItalicLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-ItalicLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6163211AAABC008D48C5 /* HKGrotesk-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D13E6164211AAABC008D48C5 /* HKGrotesk-BoldItalicLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-BoldItalicLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6165211AAABD008D48C5 /* HKGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		D13E6166211AAABD008D48C5 /* HKGrotesk-SemiBoldItalicLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-SemiBoldItalicLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6167211AAABD008D48C5 /* HKGrotesk-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-LightItalic.ttf"; sourceTree = "<group>"; };
+		D13E6168211AAABE008D48C5 /* HKGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		D13E6169211AAABF008D48C5 /* HKGrotesk-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D13E616A211AAABF008D48C5 /* HKGrotesk-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D13E616B211AAABF008D48C5 /* HKGrotesk-SemiBoldLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-SemiBoldLegacy.ttf"; sourceTree = "<group>"; };
+		D13E616C211AAAC0008D48C5 /* HKGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		D13E616D211AAAC0008D48C5 /* HKGrotesk-MediumItalicLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-MediumItalicLegacy.ttf"; sourceTree = "<group>"; };
+		D13E616E211AAAC1008D48C5 /* HKGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-Light.ttf"; sourceTree = "<group>"; };
+		D13E616F211AAAC1008D48C5 /* HKGrotesk-MediumLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-MediumLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6170211AAAC2008D48C5 /* HKGrotesk-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-Italic.ttf"; sourceTree = "<group>"; };
+		D13E6171211AAAC2008D48C5 /* HKGrotesk-LightLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-LightLegacy.ttf"; sourceTree = "<group>"; };
+		D13E6172211AAAC2008D48C5 /* HKGrotesk-BoldLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-BoldLegacy.ttf"; sourceTree = "<group>"; };
 		D16B0834211A2010009E9877 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
 		D1BB0300211A0BD200E9E79C /* CalorieCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BB0303211A0BD200E9E79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +131,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D13E6173211AAB0C008D48C5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D13E616A211AAABF008D48C5 /* HKGrotesk-SemiBoldItalic.ttf */,
+				D13E6166211AAABD008D48C5 /* HKGrotesk-SemiBoldItalicLegacy.ttf */,
+				D13E616B211AAABF008D48C5 /* HKGrotesk-SemiBoldLegacy.ttf */,
+				D13E6169211AAABF008D48C5 /* HKGrotesk-BoldItalic.ttf */,
+				D13E6164211AAABC008D48C5 /* HKGrotesk-BoldItalicLegacy.ttf */,
+				D13E6172211AAAC2008D48C5 /* HKGrotesk-BoldLegacy.ttf */,
+				D13E6170211AAAC2008D48C5 /* HKGrotesk-Italic.ttf */,
+				D13E6162211AAABC008D48C5 /* HKGrotesk-ItalicLegacy.ttf */,
+				D13E616E211AAAC1008D48C5 /* HKGrotesk-Light.ttf */,
+				D13E6167211AAABD008D48C5 /* HKGrotesk-LightItalic.ttf */,
+				D13E6161211AAABB008D48C5 /* HKGrotesk-LightItalicLegacy.ttf */,
+				D13E6171211AAAC2008D48C5 /* HKGrotesk-LightLegacy.ttf */,
+				D13E616C211AAAC0008D48C5 /* HKGrotesk-Medium.ttf */,
+				D13E6163211AAABC008D48C5 /* HKGrotesk-MediumItalic.ttf */,
+				D13E616D211AAAC0008D48C5 /* HKGrotesk-MediumItalicLegacy.ttf */,
+				D13E616F211AAAC1008D48C5 /* HKGrotesk-MediumLegacy.ttf */,
+				D13E6168211AAABE008D48C5 /* HKGrotesk-Regular.ttf */,
+				D13E6160211AAABB008D48C5 /* HKGrotesk-RegularLegacy.ttf */,
+				D13E6165211AAABD008D48C5 /* HKGrotesk-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D1BB02F7211A0BD200E9E79C = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +183,7 @@
 		D1BB0302211A0BD200E9E79C /* CalorieCounter */ = {
 			isa = PBXGroup;
 			children = (
+				D13E6173211AAB0C008D48C5 /* Fonts */,
 				D1BB0303211A0BD200E9E79C /* AppDelegate.swift */,
 				D1BB0305211A0BD200E9E79C /* ViewController.swift */,
 				D1BB0307211A0BD200E9E79C /* Main.storyboard */,
@@ -142,6 +192,8 @@
 				D1BB0312211A0BD200E9E79C /* Info.plist */,
 				D1BB030A211A0BD200E9E79C /* CalorieCounter.xcdatamodeld */,
 				D1CEDEDE211A7C5700449F2C /* APIManager.swift */,
+				D11D2E76211AB27700CF4C44 /* PopupView.swift */,
+				D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */,
 			);
 			path = CalorieCounter;
 			sourceTree = "<group>";
@@ -475,9 +527,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11D2E79211AB4ED00CF4C44 /* FoodItem.swift in Sources */,
 				D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */,
 				D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */,
 				D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */,
+				D11D2E77211AB27700CF4C44 /* PopupView.swift in Sources */,
 				D1BB030C211A0BD200E9E79C /* CalorieCounter.xcdatamodeld in Sources */,
 				D1BB0304211A0BD200E9E79C /* AppDelegate.swift in Sources */,
 			);

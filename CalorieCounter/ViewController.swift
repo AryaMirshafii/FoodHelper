@@ -13,7 +13,7 @@ import CoreML
 import SwiftyJSON
 import NVActivityIndicatorView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var predictionLabel: UILabel!
     
@@ -24,12 +24,19 @@ class ViewController: UIViewController {
     
     
     
-    
+    private var currentFood:FoodItem!
     
     @IBOutlet weak var takePhotoButton: UIButton!
     private let cameraManager = CameraManager()
     private var model: Food101!
     private var apiManager = APIManager()
+    
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle{
+        return .none
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initCamera()
@@ -97,7 +104,6 @@ class ViewController: UIViewController {
             self.predictionLabel.text = "\(prediction.classLabel)"
             self.getFoodInfo(foodName: prediction.classLabel)
             
-            
  
  
         })
@@ -127,40 +133,42 @@ class ViewController: UIViewController {
     
     
     
-    private func getFoodInfo(foodName: String){
-        apiManager.search(Query: foodName).responseJSON { response in
-            if response.result.isSuccess {
-                
-                print(response)
-                
-                let json = JSON(response.data as Any)
-                let calories:String! = json["foods"][0]["nf_calories"].string
-                let cholesterol:String! = json["foods"][0]["nf_cholesterol"].string
-                let fiber:String! = json["foods"][0]["nf_dietary_fiber"].string
-                let potassium:String! = json["foods"][0]["nf_potassium"].string
-                let protein:String! = json["foods"][0]["nf_protein"].string
-                
-                let saturatedFat:String! = json["foods"][0]["nf_saturated_fat"].string
-                let sodium:String! = json["foods"][0]["nf_sodium"].string
-                let sugars:String! = json["foods"][0]["nf_sugars"].string
-                
-                
-                let totalCarbs:String! = json["foods"][0]["nf_total_carbohydrate"].string
-                let totalFat:String! = json["foods"][0]["nf_total_fat"].string
-                var unsaturatedFat:String!
-                
-                if(totalFat != nil &&  saturatedFat != nil){
-                    unsaturatedFat =  "\(Double(totalFat!)! - Double(saturatedFat!)!)"
-
-                }else {
-                    unsaturatedFat = totalFat
-                }
-                //let unsaturatedFat:String = String(unsaturatedDouble)B
-                
-                //print(calories)
+    private func getFoodInfo(foodName:String){
+        apiManager.search(Query: foodName) { (foodItem, success) in
+            
+            if(success){
+                // use data
+                self.currentFood = foodItem
+                //print("Food name is" + foodItem.name)
+                self.performSegue(withIdentifier: "showPopup", sender: self.takePhotoButton)
                 self.progressView.stopAnimating()
                 
             }
+        }
+        
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPopup"{
+            
+            
+            if let nextViewController = segue.destination as? PopupView {
+                print("Food name is1" + currentFood.name)
+                //nextViewController.foodNameLabel?.text = currentFood.name.uppercased()
+                
+                nextViewController.modalPresentationStyle = .popover
+                nextViewController.popoverPresentationController?.sourceView = sender as! UIButton
+                nextViewController.popoverPresentationController?.sourceRect = (sender as! UIButton).bounds
+                //nextViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+
+                nextViewController.popoverPresentationController?.delegate = self
+                nextViewController.foodItem = currentFood
+            }
+            
+                
+            
         }
     }
     
