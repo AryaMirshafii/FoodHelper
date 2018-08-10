@@ -57,7 +57,7 @@ class APIManager{
                     newFood.totalFat = JsonData["foods"][0]["nf_total_fat"].stringValue
                     
                     
-                    print(JsonData["foods"][0]["nf_calories"].stringValue)
+                   
                     
                     /**
                     if let cals = JsonData["foods"][0]["nf_calories"].stringValue{
@@ -123,15 +123,14 @@ class APIManager{
     }
         
 
-        
-        
-        
-        
-        
-        
-        
-    
+    func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
         
         
     
 }
+        
+
+        
+

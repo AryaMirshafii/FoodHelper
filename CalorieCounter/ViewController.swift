@@ -55,6 +55,11 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     @IBAction func takePhoto(_ sender: Any) {
         
         print("Taking Photo")
+        if(!self.apiManager.isConnectedToInternet()){
+            performSegue(withIdentifier: "noConnection", sender: self.takePhotoButton)
+            return
+            
+        }
         self.predictionLabel.text = ""
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
             // Do something with the image
@@ -103,11 +108,9 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
             print("I think this is a \(prediction.classLabel)")
             self.predictionLabel.text = "\(prediction.classLabel)"
             self.getFoodInfo(foodName: prediction.classLabel)
-            
- 
  
         })
- 
+        
  
         print("Took Photo!")
        
@@ -134,17 +137,21 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     
     
     private func getFoodInfo(foodName:String){
-        apiManager.search(Query: foodName) { (foodItem, success) in
-            
-            if(success){
-                // use data
-                self.currentFood = foodItem
-                //print("Food name is" + foodItem.name)
-                self.performSegue(withIdentifier: "showPopup", sender: self.takePhotoButton)
-                self.progressView.stopAnimating()
+        
+        
+            apiManager.search(Query: foodName) { (foodItem, success) in
                 
+                if(success){
+                    // use data
+                    self.currentFood = foodItem
+                    //print("Food name is" + foodItem.name)
+                    self.performSegue(withIdentifier: "showPopup", sender: self.takePhotoButton)
+                    self.progressView.stopAnimating()
+                    
+                }
             }
-        }
+        
+        
         
     }
     
@@ -169,6 +176,19 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
             
                 
             
+        }else if segue.identifier == "noConnection"{
+            if let nextViewController = segue.destination as? UIViewController {
+                
+                //nextViewController.foodNameLabel?.text = currentFood.name.uppercased()
+                
+                nextViewController.modalPresentationStyle = .popover
+                nextViewController.popoverPresentationController?.sourceView = sender as! UIButton
+                nextViewController.popoverPresentationController?.sourceRect = (sender as! UIButton).bounds
+                //nextViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+                
+                nextViewController.popoverPresentationController?.delegate = self
+                
+            }
         }
     }
     

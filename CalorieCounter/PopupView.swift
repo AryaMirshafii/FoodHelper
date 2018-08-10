@@ -87,6 +87,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
         mainScrollView.addSubview(thirdPage)
         
         setLabels()
+        mainScrollView.delegate = self
         
         
         
@@ -135,7 +136,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
         } else if(lowercasedName.contains("noodle")){
             foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
             return;
-        }else if(lowercasedName.contains("cake")){
+        }else if(lowercasedName.contains("cake") && !lowercasedName.contains("cup cake") ){
             foodImageview.image = #imageLiteral(resourceName: "cake")
             return;
         }
@@ -160,8 +161,139 @@ class PopupView: UIViewController, UIScrollViewDelegate{
             foodImageview.image = #imageLiteral(resourceName: "Breakfastburrito")
         case "bruschetta":
             foodImageview.image = #imageLiteral(resourceName: "bruschetta")
-        case "Cannoli":
+        case "cannoli":
             foodImageview.image = #imageLiteral(resourceName: "cannoli")
+        case "ceviche":
+            foodImageview.image = #imageLiteral(resourceName: "Ceviche")
+        case "cheese plate":
+            foodImageview.image = #imageLiteral(resourceName: "cheese")
+        case "chicken curry":
+            foodImageview.image = #imageLiteral(resourceName: "curry")
+        case "chicken quesadilla":
+            foodImageview.image = #imageLiteral(resourceName: "quesadilla")
+        case "chicken wings":
+            foodImageview.image = #imageLiteral(resourceName: "wings")
+        case "chocolate mousse":
+            foodImageview.image = #imageLiteral(resourceName: "mousse")
+        case "churros":
+            foodImageview.image = #imageLiteral(resourceName: "churros")
+        case "clam chowder":
+            foodImageview.image = #imageLiteral(resourceName: "chowder")
+        case "club sandwich":
+            foodImageview.image = #imageLiteral(resourceName: "sandwich (1)")
+        case "crab cakes":
+            foodImageview.image = #imageLiteral(resourceName: "crab")
+        case "creme brulee":
+            foodImageview.image = #imageLiteral(resourceName: "cremebrulee")
+        case "croque madame":
+            foodImageview.image =  #imageLiteral(resourceName: "Croquemadame")
+        case "cup cakes":
+            foodImageview.image = #imageLiteral(resourceName: "cupcake")
+        case "deviled eggs":
+            foodImageview.image = #imageLiteral(resourceName: "Deviledeggs")
+        case "donuts":
+            foodImageview.image = #imageLiteral(resourceName: "donut")
+        case "dumplings":
+            foodImageview.image = #imageLiteral(resourceName: "dumpling")
+        case "edamame":
+            foodImageview.image = #imageLiteral(resourceName: "Edamame")
+        case "eggs benedict":
+            foodImageview.image = #imageLiteral(resourceName: "Deviledeggs")
+        case "escargots":
+            foodImageview.image = #imageLiteral(resourceName: "Escargots")
+        case "falafel":
+            foodImageview.image = #imageLiteral(resourceName: "falafel")
+        case "filet mignon":
+            foodImageview.image = #imageLiteral(resourceName: "steak")
+        case "fish and chips":
+            foodImageview.image = #imageLiteral(resourceName: "fish-and-chips")
+        case "foie gras":
+            foodImageview.image = #imageLiteral(resourceName: "Foiegras")
+        case "french fries":
+            foodImageview.image = #imageLiteral(resourceName: "fries")
+        case "french onion soup":
+            foodImageview.image = #imageLiteral(resourceName: "chowder")
+        case "french toast":
+            foodImageview.image = #imageLiteral(resourceName: "frenchToast")
+        case "fried calamari":
+            foodImageview.image = #imageLiteral(resourceName: "Friedcalamari")
+        case "fried rice":
+            foodImageview.image = #imageLiteral(resourceName: "Friedrice")
+        case "frozen yogurt":
+            foodImageview.image = #imageLiteral(resourceName: "Frozenyogurt")
+        case "garlic bread":
+            foodImageview.image = #imageLiteral(resourceName: "Garlicbread")
+        case "gnocchi":
+            foodImageview.image = #imageLiteral(resourceName: "Gnocchi")
+        case "grilled cheese sandwich":
+            foodImageview.image = #imageLiteral(resourceName: "grilled-sandwich")
+        case "grilled salmon":
+            foodImageview.image = #imageLiteral(resourceName: "salmon")
+        case "guacamole":
+            foodImageview.image = #imageLiteral(resourceName: "guacamole")
+        case "gyoza":
+            foodImageview.image = #imageLiteral(resourceName: "dumpling")
+        case "hamburger":
+            foodImageview.image = #imageLiteral(resourceName: "burger")
+        case "Hot and sour soup":
+            foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
+        case "hot dog":
+            foodImageview.image = #imageLiteral(resourceName: "hot-dog")
+        case "huevos rancheros":
+            foodImageview.image = #imageLiteral(resourceName: "omelette")
+        case "hummus":
+            foodImageview.image = #imageLiteral(resourceName: "hummus")
+        case "ice cream":
+            foodImageview.image = #imageLiteral(resourceName: "ice-cream")
+        case "lasagna":
+            foodImageview.image = #imageLiteral(resourceName: "lasagna")
+        case "lobster bisque":
+            foodImageview.image = #imageLiteral(resourceName: "chowder")
+        case "lobster roll sandwich":
+            foodImageview.image = #imageLiteral(resourceName: "lobsterRoll")
+        case "macaroni and cheese":
+            foodImageview.image = #imageLiteral(resourceName: "Macaroniandcheese")
+        case "macarons":
+            foodImageview.image = #imageLiteral(resourceName: "macarons")
+        case "miso soup":
+            foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
+        case "mussels":
+            foodImageview.image = #imageLiteral(resourceName: "mussel")
+        case "nachos":
+            foodImageview.image = #imageLiteral(resourceName: "nachos")
+        case "omelette":
+            foodImageview.image = #imageLiteral(resourceName: "omelette")
+        case "onion rings":
+            foodImageview.image = #imageLiteral(resourceName: "onion-rings")
+        case "oysters":
+            foodImageview.image = #imageLiteral(resourceName: "oyster")
+        case "pad thai":
+            foodImageview.image = #imageLiteral(resourceName: "pad-thai")
+        case "paella":
+            foodImageview.image = #imageLiteral(resourceName: "paella")
+        case "pancakes":
+            foodImageview.image = #imageLiteral(resourceName: "pancakes")
+        case "panna cotta":
+            foodImageview.image = #imageLiteral(resourceName: "panna-cotta")
+        case "peking duck":
+            foodImageview.image = #imageLiteral(resourceName: "duck")
+        case "pho":
+            foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
+        case "pizza":
+            foodImageview.image = #imageLiteral(resourceName: "pizza")
+        case "pork chop":
+            foodImageview.image = #imageLiteral(resourceName: "chop")
+        
+            
+            
+            
+        
+        
+            
+        
+            
+        
+        
         
         default: break
             //Stopped at carrot cake
@@ -178,7 +310,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
         }else if(lowercasedName == "pizza" ){
             foodImageview.image = #imageLiteral(resourceName: "pizza")
         }else if(lowercasedName == "grilled salmon"){
-            foodImageview.image = #imageLiteral(resourceName: "salmon")
+            
         }else if(lowercasedName == "chicken wings"){
             foodImageview.image = #imageLiteral(resourceName: "wings")
         }else if(lowercasedName == "steak"){
@@ -190,8 +322,17 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let pageNumber = round(scrollView.contentOffset.x/scrollView.frame.width)
+        let pageNumber = round(scrollView.contentOffset.x/scrollView.bounds.width)
+        print("The page number is: " + String(describing: pageNumber))
         pageIndex.currentPage = Int(pageNumber)
+    }
+    
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageNumber = round(scrollView.contentOffset.x/scrollView.bounds.width)
+        let currentPos = CGPoint(x: firstPage.bounds.width * pageNumber, y: 0)
+        
+        mainScrollView.setContentOffset(currentPos, animated: false)
     }
     
     
