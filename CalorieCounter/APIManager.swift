@@ -44,17 +44,17 @@ class APIManager{
                     
                     
                     
-                    newFood.calories = JsonData["foods"][0]["nf_calories"].stringValue
-                    newFood.cholesterol = JsonData["foods"][0]["nf_cholesterol"].stringValue
-                    newFood.fiber = JsonData["foods"][0]["nf_dietary_fiber"].stringValue
-                    newFood.potassium = JsonData["foods"][0]["nf_potassium"].stringValue
-                    newFood.protein = JsonData["foods"][0]["nf_protein"].stringValue
-                    newFood.saturatedFat = JsonData["foods"][0]["nf_saturated_fat"].stringValue
-                    newFood.sodium = JsonData["foods"][0]["nf_sodium"].stringValue
+                    newFood.calories = String(format: "%.2f",JsonData["foods"][0]["nf_calories"].doubleValue)
+                    newFood.cholesterol = String(format: "%.2f",JsonData["foods"][0]["nf_cholesterol"].doubleValue)
+                    newFood.fiber = String(format: "%.2f", JsonData["foods"][0]["nf_dietary_fiber"].doubleValue)
+                    newFood.potassium = String(format: "%.2f", JsonData["foods"][0]["nf_potassium"].doubleValue)
+                    newFood.protein = String(format: "%.2f", JsonData["foods"][0]["nf_protein"].doubleValue)
+                    newFood.saturatedFat = String(format: "%.2f", JsonData["foods"][0]["nf_saturated_fat"].doubleValue)
+                    newFood.sodium = String(format: "%.2f", JsonData["foods"][0]["nf_sodium"].doubleValue)
                     
-                    newFood.sugars = JsonData["foods"][0]["nf_sugars"].stringValue
-                    newFood.totalCarbs = JsonData["foods"][0]["nf_total_carbohydrate"].stringValue
-                    newFood.totalFat = JsonData["foods"][0]["nf_total_fat"].stringValue
+                    newFood.sugars = String(format: "%.2f", JsonData["foods"][0]["nf_sugars"].doubleValue)
+                    newFood.totalCarbs = String(format: "%.2f", JsonData["foods"][0]["nf_total_carbohydrate"].doubleValue)
+                    newFood.totalFat = String(format: "%.2f", JsonData["foods"][0]["nf_total_fat"].doubleValue)
                     
                     
                    
