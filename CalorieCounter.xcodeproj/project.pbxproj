@@ -23,6 +23,7 @@
 		D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEDEDE211A7C5700449F2C /* APIManager.swift */; };
 		D1D720E221C467DD00D14156 /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D720E121C467DD00D14156 /* donuts.json */; };
 		D1D720E421C4684100D14156 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E321C4684100D14156 /* JsonManager.swift */; };
+		D1D720E621C4950100D14156 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */; };
 		E0EA6E4395393F0CF7D1F7E4 /* Pods_CalorieCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A62CCF2EE7C36A0B8BE281 /* Pods_CalorieCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		D1CEDEDE211A7C5700449F2C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		D1D720E121C467DD00D14156 /* donuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = donuts.json; sourceTree = "<group>"; };
 		D1D720E321C4684100D14156 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D6B279A4F6896A479531D29C /* Pods-CalorieCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterTests/Pods-CalorieCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E61C7668A3038DCBC638CBD0 /* Pods-CalorieCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter/Pods-CalorieCounter.release.xcconfig"; sourceTree = "<group>"; };
 		E67B18007E4AC64E3DFC150A /* Pods_CalorieCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				D1BB0303211A0BD200E9E79C /* AppDelegate.swift */,
 				D1D720E021C465D300D14156 /* jsonFiles */,
 				D1BB0305211A0BD200E9E79C /* ViewController.swift */,
+				D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */,
 				D1BB0307211A0BD200E9E79C /* Main.storyboard */,
 				D1BB030D211A0BD200E9E79C /* Assets.xcassets */,
 				D1BB030F211A0BD200E9E79C /* LaunchScreen.storyboard */,
@@ -548,6 +551,7 @@
 				D1D720E421C4684100D14156 /* JsonManager.swift in Sources */,
 				D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */,
 				D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */,
+				D1D720E621C4950100D14156 /* SideMenuTableViewController.swift in Sources */,
 				D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */,
 				D11D2E77211AB27700CF4C44 /* PopupView.swift in Sources */,
 				D1BB030C211A0BD200E9E79C /* CalorieCounter.xcdatamodeld in Sources */,
