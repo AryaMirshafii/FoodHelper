@@ -21,6 +21,8 @@
 		D1BB031C211A0BD200E9E79C /* CalorieCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB031B211A0BD200E9E79C /* CalorieCounterTests.swift */; };
 		D1BB0327211A0BD200E9E79C /* CalorieCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0326211A0BD200E9E79C /* CalorieCounterUITests.swift */; };
 		D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEDEDE211A7C5700449F2C /* APIManager.swift */; };
+		D1D720E221C467DD00D14156 /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D720E121C467DD00D14156 /* donuts.json */; };
+		D1D720E421C4684100D14156 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E321C4684100D14156 /* JsonManager.swift */; };
 		E0EA6E4395393F0CF7D1F7E4 /* Pods_CalorieCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A62CCF2EE7C36A0B8BE281 /* Pods_CalorieCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		D1BB0326211A0BD200E9E79C /* CalorieCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterUITests.swift; sourceTree = "<group>"; };
 		D1BB0328211A0BD200E9E79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CEDEDE211A7C5700449F2C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D1D720E121C467DD00D14156 /* donuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = donuts.json; sourceTree = "<group>"; };
+		D1D720E321C4684100D14156 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
 		D6B279A4F6896A479531D29C /* Pods-CalorieCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterTests/Pods-CalorieCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E61C7668A3038DCBC638CBD0 /* Pods-CalorieCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter/Pods-CalorieCounter.release.xcconfig"; sourceTree = "<group>"; };
 		E67B18007E4AC64E3DFC150A /* Pods_CalorieCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +189,7 @@
 			children = (
 				D13E6173211AAB0C008D48C5 /* Fonts */,
 				D1BB0303211A0BD200E9E79C /* AppDelegate.swift */,
+				D1D720E021C465D300D14156 /* jsonFiles */,
 				D1BB0305211A0BD200E9E79C /* ViewController.swift */,
 				D1BB0307211A0BD200E9E79C /* Main.storyboard */,
 				D1BB030D211A0BD200E9E79C /* Assets.xcassets */,
@@ -192,6 +197,7 @@
 				D1BB0312211A0BD200E9E79C /* Info.plist */,
 				D1BB030A211A0BD200E9E79C /* CalorieCounter.xcdatamodeld */,
 				D1CEDEDE211A7C5700449F2C /* APIManager.swift */,
+				D1D720E321C4684100D14156 /* JsonManager.swift */,
 				D11D2E76211AB27700CF4C44 /* PopupView.swift */,
 				D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */,
 			);
@@ -214,6 +220,14 @@
 				D1BB0328211A0BD200E9E79C /* Info.plist */,
 			);
 			path = CalorieCounterUITests;
+			sourceTree = "<group>";
+		};
+		D1D720E021C465D300D14156 /* jsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D1D720E121C467DD00D14156 /* donuts.json */,
+			);
+			path = jsonFiles;
 			sourceTree = "<group>";
 		};
 		E61010A0BD8338E383DD88D2 /* Frameworks */ = {
@@ -342,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D720E221C467DD00D14156 /* donuts.json in Resources */,
 				D1BB0311211A0BD200E9E79C /* LaunchScreen.storyboard in Resources */,
 				D1BB030E211A0BD200E9E79C /* Assets.xcassets in Resources */,
 				D1BB0309211A0BD200E9E79C /* Main.storyboard in Resources */,
@@ -453,6 +468,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCSVExport/SwiftCSVExport.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -461,6 +477,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCSVExport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -528,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11D2E79211AB4ED00CF4C44 /* FoodItem.swift in Sources */,
+				D1D720E421C4684100D14156 /* JsonManager.swift in Sources */,
 				D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */,
 				D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */,
 				D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */,

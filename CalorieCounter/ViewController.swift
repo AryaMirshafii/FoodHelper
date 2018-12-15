@@ -30,6 +30,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     private let cameraManager = CameraManager()
     private var model: Food101!
     private var apiManager = APIManager()
+    private var jsonManager = JsonManager()
     
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle{
@@ -41,6 +42,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
         super.viewDidLoad()
         initCamera()
         predictionLabel.text = "";
+        model = Food101()
         
         
         
@@ -48,7 +50,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     
     
     override func viewWillAppear(_ animated: Bool) {
-        model = Food101()
+        //model = Food101()
     }
     
     //Takes a photo
@@ -139,6 +141,14 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     private func getFoodInfo(foodName:String){
         
         
+        
+            let foodItem = jsonManager.search(query: foodName)
+            self.currentFood = foodItem
+            //print("Food name is" + foodItem.name)
+            self.performSegue(withIdentifier: "showPopup", sender: self.takePhotoButton)
+            self.progressView.stopAnimating()
+        
+           /*
             apiManager.search(Query: foodName) { (foodItem, success) in
                 
                 if(success){
@@ -151,7 +161,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
                 }
             }
         
-        
+        */
         
     }
     

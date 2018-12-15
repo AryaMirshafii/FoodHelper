@@ -19,6 +19,7 @@ class APIManager{
     
     
     
+    
     func search(Query: String, completion: @escaping (FoodItem ,Bool) -> Void){
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -44,17 +45,17 @@ class APIManager{
                     
                     
                     
-                    newFood.calories = String(format: "%.2f",JsonData["foods"][0]["nf_calories"].doubleValue)
-                    newFood.cholesterol = String(format: "%.2f",JsonData["foods"][0]["nf_cholesterol"].doubleValue)
-                    newFood.fiber = String(format: "%.2f", JsonData["foods"][0]["nf_dietary_fiber"].doubleValue)
-                    newFood.potassium = String(format: "%.2f", JsonData["foods"][0]["nf_potassium"].doubleValue)
-                    newFood.protein = String(format: "%.2f", JsonData["foods"][0]["nf_protein"].doubleValue)
-                    newFood.saturatedFat = String(format: "%.2f", JsonData["foods"][0]["nf_saturated_fat"].doubleValue)
-                    newFood.sodium = String(format: "%.2f", JsonData["foods"][0]["nf_sodium"].doubleValue)
+                    newFood.calories = String(format: "%.1f",JsonData["foods"][0]["nf_calories"].doubleValue)
+                    newFood.cholesterol = String(format: "%.1f",JsonData["foods"][0]["nf_cholesterol"].doubleValue)
+                    newFood.fiber = String(format: "%.1f", JsonData["foods"][0]["nf_dietary_fiber"].doubleValue)
+                    newFood.potassium = String(format: "%.1f", JsonData["foods"][0]["nf_potassium"].doubleValue)
+                    newFood.protein = String(format: "%.1f", JsonData["foods"][0]["nf_protein"].doubleValue)
+                    newFood.saturatedFat = String(format: "%.1f", JsonData["foods"][0]["nf_saturated_fat"].doubleValue)
+                    newFood.sodium = String(format: "%.1f", JsonData["foods"][0]["nf_sodium"].doubleValue)
                     
-                    newFood.sugars = String(format: "%.2f", JsonData["foods"][0]["nf_sugars"].doubleValue)
-                    newFood.totalCarbs = String(format: "%.2f", JsonData["foods"][0]["nf_total_carbohydrate"].doubleValue)
-                    newFood.totalFat = String(format: "%.2f", JsonData["foods"][0]["nf_total_fat"].doubleValue)
+                    newFood.sugars = String(format: "%.1f", JsonData["foods"][0]["nf_sugars"].doubleValue)
+                    newFood.totalCarbs = String(format: "%.1f", JsonData["foods"][0]["nf_total_carbohydrate"].doubleValue)
+                    newFood.totalFat = String(format: "%.1f", JsonData["foods"][0]["nf_total_fat"].doubleValue)
                     
                     
                    
@@ -121,7 +122,31 @@ class APIManager{
                 }
         }
     }
+    func betterSearch(query: String) -> FoodItem{
+        let newFood = FoodItem(Name: query)
+        do {
+            if let file = Bundle.main.url(forResource: query, withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                if let object = json as? [String: Any] {
+                    print("Sucess arya")
+                    
+                    
+                    print(object["nf_calories"])
+                    
+                    //print(object)
+                } else {
+                    print("JSON is invalid")
+                }
+            } else {
+                print("no file")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
         
+        return newFood
+    }
 
     func isConnectedToInternet() -> Bool {
         return NetworkReachabilityManager()!.isReachable

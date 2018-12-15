@@ -68,8 +68,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.cornerRadius = 25
-        foodImageview.layer.cornerRadius = foodImageview.frame.height/2
-        foodImageview.clipsToBounds = true
+        
         //setImage(foodName: foodItem.name)
         //view.clipsToBounds = true
         //self.preferredContentSize = CGSize(width: 340, height: 452)
@@ -235,7 +234,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
             foodImageview.image = #imageLiteral(resourceName: "dumpling")
         case "hamburger":
             foodImageview.image = #imageLiteral(resourceName: "burger")
-        case "Hot and sour soup":
+        case "hot and sour soup":
             foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
         case "hot dog":
             foodImageview.image = #imageLiteral(resourceName: "hot-dog")
@@ -283,39 +282,52 @@ class PopupView: UIViewController, UIScrollViewDelegate{
             foodImageview.image = #imageLiteral(resourceName: "pizza")
         case "pork chop":
             foodImageview.image = #imageLiteral(resourceName: "chop")
-        
+        case "poutine":
+            foodImageview.image = #imageLiteral(resourceName: "Poutine")
+        case "prime rib":
+            foodImageview.image = #imageLiteral(resourceName: "Primerib")
+        case "pulled pork sandwich":
+            foodImageview.image = #imageLiteral(resourceName: "pork")
+        case "ramen":
+            foodImageview.image = #imageLiteral(resourceName: "Bibimbap")
+        case "ravioli":
+            foodImageview.image = #imageLiteral(resourceName: "ravioli")
+        case "risotto":
+            foodImageview.image = #imageLiteral(resourceName: "risotto")
+        case "samosa":
+            foodImageview.image = #imageLiteral(resourceName: "samosa")
+        case "sashimi":
+            foodImageview.image = #imageLiteral(resourceName: "sashimi")
+        case "scallops":
+            foodImageview.image = #imageLiteral(resourceName: "scallop")
+        case "shrimp and grits":
+            foodImageview.image = #imageLiteral(resourceName: "paella")
+        case "spaghetti bolognese":
+            foodImageview.image = #imageLiteral(resourceName: "spaghetti")
+        case "spaghetti carbonara":
+            foodImageview.image = #imageLiteral(resourceName: "spaghetti")
+        case "spring rolls":
+            foodImageview.image = #imageLiteral(resourceName: "spring-rolls")
+        case "steak":
+            foodImageview.image = #imageLiteral(resourceName: "steak")
+        case "sushi":
+            foodImageview.image = #imageLiteral(resourceName: "sushi")
+        case "tacos":
+            foodImageview.image = #imageLiteral(resourceName: "taco")
+        case "takoyaki":
+            foodImageview.image = #imageLiteral(resourceName: "takoyaki")
+        case "tiramisu":
+            foodImageview.image = #imageLiteral(resourceName: "tiramisu")
+        case "tuna tartare":
+            foodImageview.image = #imageLiteral(resourceName: "Tunatartare")
+        case "waffles":
+            foodImageview.image = #imageLiteral(resourceName: "waffle")
             
-            
-            
-        
-        
-            
-        
-            
-        
-        
-        
         default: break
             //Stopped at carrot cake
         }
             
-            
-       
         
-            
-            
-        //Just for showing off
-        if(lowercasedName == "donuts"){
-            foodImageview.image = #imageLiteral(resourceName: "donut")
-        }else if(lowercasedName == "pizza" ){
-            foodImageview.image = #imageLiteral(resourceName: "pizza")
-        }else if(lowercasedName == "grilled salmon"){
-            
-        }else if(lowercasedName == "chicken wings"){
-            foodImageview.image = #imageLiteral(resourceName: "wings")
-        }else if(lowercasedName == "steak"){
-            foodImageview.image = #imageLiteral(resourceName: "steak")
-        }
         
     }
     

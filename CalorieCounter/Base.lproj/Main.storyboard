@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -96,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-tY-sSv">
-                                <rect key="frame" x="142" y="12" width="80" height="80"/>
+                                <rect key="frame" x="142.5" y="12" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="8G0-jh-p9v"/>
                                     <constraint firstAttribute="height" constant="80" id="wmO-lZ-VQH"/>
@@ -134,7 +135,7 @@
                                 </variation>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="weg-1I-8r0">
-                                <rect key="frame" x="162.5" y="409" width="39" height="37"/>
+                                <rect key="frame" x="163" y="409" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="ojT-Ql-cV2"/>
                                 </constraints>
@@ -150,7 +151,7 @@
                                     </mask>
                                 </variation>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mM-bs-dXa">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mM-bs-dXa">
                                 <rect key="frame" x="22" y="160" width="321" height="251"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="251" id="llg-5y-amn"/>
@@ -669,7 +670,7 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noConnection" translatesAutoresizingMaskIntoConstraints="NO" id="dhF-5r-5qq">
-                                <rect key="frame" x="117" y="299" width="130" height="130"/>
+                                <rect key="frame" x="117.5" y="299" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="gUR-7v-iud"/>
                                     <constraint firstAttribute="width" constant="130" id="xik-RZ-vho"/>

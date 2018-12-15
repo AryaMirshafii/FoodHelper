@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18006BA0D09EAF468443D6D5B879FF7B"
+               BlueprintIdentifier = "0DF5218DE4505E30606ED44D579D2C0F"
                BuildableName = "Pods_CalorieCounter.framework"
                BlueprintName = "Pods-CalorieCounter"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18006BA0D09EAF468443D6D5B879FF7B"
+            BlueprintIdentifier = "0DF5218DE4505E30606ED44D579D2C0F"
             BuildableName = "Pods_CalorieCounter.framework"
             BlueprintName = "Pods-CalorieCounter"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -13,7 +13,7 @@ target 'CalorieCounter' do
   pod 'SwiftyJSON'
   pod 'SwiftCSVExport'
   pod 'NVActivityIndicatorView'
-
+  pod 'SideMenu'
 
   target 'CalorieCounterTests' do
     inherit! :search_paths
