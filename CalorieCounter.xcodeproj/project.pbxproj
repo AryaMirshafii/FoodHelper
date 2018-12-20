@@ -9,9 +9,114 @@
 /* Begin PBXBuildFile section */
 		1933D9CD6FE2F6E64091D323 /* Pods_CalorieCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67B18007E4AC64E3DFC150A /* Pods_CalorieCounter.framework */; };
 		1E5511E3478187F70E6F18C5 /* Pods_CalorieCounterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABE86F6210F2297BED5C258 /* Pods_CalorieCounterUITests.framework */; };
+		D11306CC21C6F5D0005798EC /* fruitAndFood.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D11306CB21C6F5D0005798EC /* fruitAndFood.mlmodel */; };
+		D11306CE21C7023F005798EC /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11306CD21C7023F005798EC /* ChartViewController.swift */; };
+		D11306D121C762F2005798EC /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = D11306D021C762F1005798EC /* labels.txt */; };
 		D11D2E77211AB27700CF4C44 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D2E76211AB27700CF4C44 /* PopupView.swift */; };
 		D11D2E79211AB4ED00CF4C44 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */; };
 		D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D16B0834211A2010009E9877 /* Food101.mlmodel */; };
+		D19062BB21C5B393005DA34F /* beef_tartare.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625521C5B385005DA34F /* beef_tartare.json */; };
+		D19062BC21C5B393005DA34F /* dumplings.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625621C5B386005DA34F /* dumplings.json */; };
+		D19062BD21C5B393005DA34F /* lasagna.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625721C5B386005DA34F /* lasagna.json */; };
+		D19062BE21C5B393005DA34F /* grilled_cheese_sandwich.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625821C5B386005DA34F /* grilled_cheese_sandwich.json */; };
+		D19062BF21C5B393005DA34F /* spaghetti_bolognese.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625921C5B386005DA34F /* spaghetti_bolognese.json */; };
+		D19062C021C5B393005DA34F /* baklava.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625A21C5B386005DA34F /* baklava.json */; };
+		D19062C121C5B393005DA34F /* filet_mignon.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625B21C5B386005DA34F /* filet_mignon.json */; };
+		D19062C221C5B393005DA34F /* spring_rolls.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625C21C5B386005DA34F /* spring_rolls.json */; };
+		D19062C321C5B393005DA34F /* waffles.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625D21C5B387005DA34F /* waffles.json */; };
+		D19062C421C5B393005DA34F /* hummus.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625E21C5B387005DA34F /* hummus.json */; };
+		D19062C521C5B393005DA34F /* risotto.json in Resources */ = {isa = PBXBuildFile; fileRef = D190625F21C5B387005DA34F /* risotto.json */; };
+		D19062C621C5B393005DA34F /* peking_duck.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626021C5B387005DA34F /* peking_duck.json */; };
+		D19062C721C5B393005DA34F /* nachos.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626121C5B387005DA34F /* nachos.json */; };
+		D19062C821C5B393005DA34F /* cheese_plate.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626221C5B387005DA34F /* cheese_plate.json */; };
+		D19062C921C5B393005DA34F /* bruschetta.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626321C5B387005DA34F /* bruschetta.json */; };
+		D19062CA21C5B393005DA34F /* falafel.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626421C5B387005DA34F /* falafel.json */; };
+		D19062CB21C5B393005DA34F /* french_toast.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626521C5B388005DA34F /* french_toast.json */; };
+		D19062CC21C5B393005DA34F /* escargots.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626621C5B388005DA34F /* escargots.json */; };
+		D19062CD21C5B393005DA34F /* croque_madame.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626721C5B388005DA34F /* croque_madame.json */; };
+		D19062CE21C5B393005DA34F /* oysters.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626821C5B388005DA34F /* oysters.json */; };
+		D19062CF21C5B393005DA34F /* bread_pudding.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626921C5B388005DA34F /* bread_pudding.json */; };
+		D19062D021C5B393005DA34F /* frozen_yogurt.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626A21C5B388005DA34F /* frozen_yogurt.json */; };
+		D19062D121C5B393005DA34F /* beef_carpaccio.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626B21C5B388005DA34F /* beef_carpaccio.json */; };
+		D19062D221C5B393005DA34F /* breakfast_burrito.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626C21C5B388005DA34F /* breakfast_burrito.json */; };
+		D19062D321C5B393005DA34F /* grilled_salmon.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626D21C5B389005DA34F /* grilled_salmon.json */; };
+		D19062D421C5B393005DA34F /* beignets.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626E21C5B389005DA34F /* beignets.json */; };
+		D19062D521C5B393005DA34F /* fried_rice.json in Resources */ = {isa = PBXBuildFile; fileRef = D190626F21C5B389005DA34F /* fried_rice.json */; };
+		D19062D621C5B393005DA34F /* ceviche.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627021C5B389005DA34F /* ceviche.json */; };
+		D19062D721C5B393005DA34F /* scallops.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627121C5B389005DA34F /* scallops.json */; };
+		D19062D821C5B393005DA34F /* crab_cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627221C5B389005DA34F /* crab_cakes.json */; };
+		D19062D921C5B393005DA34F /* churros.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627321C5B389005DA34F /* churros.json */; };
+		D19062DA21C5B393005DA34F /* cup_cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627421C5B38A005DA34F /* cup_cakes.json */; };
+		D19062DB21C5B393005DA34F /* gnocchi.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627521C5B38A005DA34F /* gnocchi.json */; };
+		D19062DC21C5B393005DA34F /* steak.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627621C5B38A005DA34F /* steak.json */; };
+		D19062DD21C5B393005DA34F /* shrimp_and_grits.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627721C5B38A005DA34F /* shrimp_and_grits.json */; };
+		D19062DE21C5B393005DA34F /* edamame.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627821C5B38A005DA34F /* edamame.json */; };
+		D19062DF21C5B393005DA34F /* ravioli.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627921C5B38A005DA34F /* ravioli.json */; };
+		D19062E021C5B393005DA34F /* baby_back_ribs.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627A21C5B38A005DA34F /* baby_back_ribs.json */; };
+		D19062E121C5B393005DA34F /* apple_pie.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627B21C5B38A005DA34F /* apple_pie.json */; };
+		D19062E221C5B393005DA34F /* greek_salad.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627C21C5B38B005DA34F /* greek_salad.json */; };
+		D19062E321C5B393005DA34F /* tacos.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627D21C5B38B005DA34F /* tacos.json */; };
+		D19062E421C5B393005DA34F /* sashimi.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627E21C5B38B005DA34F /* sashimi.json */; };
+		D19062E521C5B393005DA34F /* chocolate_cake.json in Resources */ = {isa = PBXBuildFile; fileRef = D190627F21C5B38B005DA34F /* chocolate_cake.json */; };
+		D19062E621C5B393005DA34F /* club_sandwich.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628021C5B38B005DA34F /* club_sandwich.json */; };
+		D19062E721C5B393005DA34F /* deviled_eggs.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628121C5B38B005DA34F /* deviled_eggs.json */; };
+		D19062E821C5B393005DA34F /* onion_rings.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628221C5B38B005DA34F /* onion_rings.json */; };
+		D19062E921C5B393005DA34F /* ramen.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628321C5B38B005DA34F /* ramen.json */; };
+		D19062EA21C5B393005DA34F /* hamburger.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628421C5B38C005DA34F /* hamburger.json */; };
+		D19062EB21C5B393005DA34F /* creme_brulee.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628521C5B38C005DA34F /* creme_brulee.json */; };
+		D19062EC21C5B393005DA34F /* chicken_curry.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628621C5B38C005DA34F /* chicken_curry.json */; };
+		D19062ED21C5B393005DA34F /* chocolate_mousse.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628721C5B38C005DA34F /* chocolate_mousse.json */; };
+		D19062EE21C5B393005DA34F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628821C5B38C005DA34F /* data.json */; };
+		D19062EF21C5B393005DA34F /* fish_and_chips.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628921C5B38C005DA34F /* fish_and_chips.json */; };
+		D19062F021C5B393005DA34F /* eggs_benedict.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628A21C5B38C005DA34F /* eggs_benedict.json */; };
+		D19062F121C5B393005DA34F /* tiramisu.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628B21C5B38C005DA34F /* tiramisu.json */; };
+		D19062F221C5B393005DA34F /* foie_gras.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628C21C5B38D005DA34F /* foie_gras.json */; };
+		D19062F321C5B393005DA34F /* macaroni_and_cheese.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628D21C5B38D005DA34F /* macaroni_and_cheese.json */; };
+		D19062F421C5B393005DA34F /* chicken_quesadilla.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628E21C5B38D005DA34F /* chicken_quesadilla.json */; };
+		D19062F521C5B393005DA34F /* prime_rib.json in Resources */ = {isa = PBXBuildFile; fileRef = D190628F21C5B38D005DA34F /* prime_rib.json */; };
+		D19062F621C5B393005DA34F /* french_onion_soup.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629021C5B38D005DA34F /* french_onion_soup.json */; };
+		D19062F721C5B393005DA34F /* cheesecake.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629121C5B38D005DA34F /* cheesecake.json */; };
+		D19062F821C5B393005DA34F /* guacamole.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629221C5B38D005DA34F /* guacamole.json */; };
+		D19062F921C5B393005DA34F /* miso_soup.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629321C5B38D005DA34F /* miso_soup.json */; };
+		D19062FA21C5B393005DA34F /* ice_cream.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629421C5B38E005DA34F /* ice_cream.json */; };
+		D19062FB21C5B393005DA34F /* panna_cotta.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629521C5B38E005DA34F /* panna_cotta.json */; };
+		D19062FC21C5B393005DA34F /* clam_chowder.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629621C5B38E005DA34F /* clam_chowder.json */; };
+		D19062FD21C5B393005DA34F /* paella.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629721C5B38E005DA34F /* paella.json */; };
+		D19062FE21C5B393005DA34F /* caesar_salad.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629821C5B38E005DA34F /* caesar_salad.json */; };
+		D19062FF21C5B393005DA34F /* pizza.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629921C5B38E005DA34F /* pizza.json */; };
+		D190630021C5B393005DA34F /* pancakes.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629A21C5B38E005DA34F /* pancakes.json */; };
+		D190630121C5B393005DA34F /* bibimbap.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629B21C5B38E005DA34F /* bibimbap.json */; };
+		D190630221C5B393005DA34F /* huevos_rancheros.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629C21C5B38F005DA34F /* huevos_rancheros.json */; };
+		D190630321C5B393005DA34F /* hot_and_sour_soup.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629D21C5B38F005DA34F /* hot_and_sour_soup.json */; };
+		D190630421C5B393005DA34F /* takoyaki.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629E21C5B38F005DA34F /* takoyaki.json */; };
+		D190630521C5B393005DA34F /* pho.json in Resources */ = {isa = PBXBuildFile; fileRef = D190629F21C5B38F005DA34F /* pho.json */; };
+		D190630621C5B393005DA34F /* fried_calamari.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A021C5B38F005DA34F /* fried_calamari.json */; };
+		D190630721C5B393005DA34F /* pad_thai.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A121C5B38F005DA34F /* pad_thai.json */; };
+		D190630821C5B393005DA34F /* macarons.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A221C5B38F005DA34F /* macarons.json */; };
+		D190630921C5B393005DA34F /* red_velvet_cake.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A321C5B38F005DA34F /* red_velvet_cake.json */; };
+		D190630A21C5B393005DA34F /* mussels.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A421C5B390005DA34F /* mussels.json */; };
+		D190630B21C5B393005DA34F /* pork_chop.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A521C5B390005DA34F /* pork_chop.json */; };
+		D190630C21C5B393005DA34F /* hot_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A621C5B390005DA34F /* hot_dog.json */; };
+		D190630D21C5B393005DA34F /* garlic_bread.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A721C5B390005DA34F /* garlic_bread.json */; };
+		D190630E21C5B393005DA34F /* tuna_tartare.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A821C5B390005DA34F /* tuna_tartare.json */; };
+		D190630F21C5B393005DA34F /* carrot_cake.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062A921C5B390005DA34F /* carrot_cake.json */; };
+		D190631021C5B393005DA34F /* seaweed_salad.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AA21C5B390005DA34F /* seaweed_salad.json */; };
+		D190631121C5B393005DA34F /* french_fries.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AB21C5B390005DA34F /* french_fries.json */; };
+		D190631221C5B393005DA34F /* samosa.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AC21C5B391005DA34F /* samosa.json */; };
+		D190631321C5B393005DA34F /* beet_salad.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AD21C5B391005DA34F /* beet_salad.json */; };
+		D190631421C5B393005DA34F /* omelette.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AE21C5B391005DA34F /* omelette.json */; };
+		D190631521C5B393005DA34F /* spaghetti_carbonara.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062AF21C5B391005DA34F /* spaghetti_carbonara.json */; };
+		D190631621C5B393005DA34F /* gyoza.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B021C5B391005DA34F /* gyoza.json */; };
+		D190631721C5B393005DA34F /* pulled_pork_sandwich.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B121C5B391005DA34F /* pulled_pork_sandwich.json */; };
+		D190631821C5B393005DA34F /* cannoli.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B221C5B392005DA34F /* cannoli.json */; };
+		D190631921C5B393005DA34F /* poutine.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B321C5B392005DA34F /* poutine.json */; };
+		D190631A21C5B393005DA34F /* chicken_wings.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B421C5B392005DA34F /* chicken_wings.json */; };
+		D190631B21C5B393005DA34F /* lobster_roll_sandwich.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B521C5B392005DA34F /* lobster_roll_sandwich.json */; };
+		D190631C21C5B393005DA34F /* caprese_salad.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B621C5B392005DA34F /* caprese_salad.json */; };
+		D190631D21C5B393005DA34F /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B721C5B392005DA34F /* donuts.json */; };
+		D190631E21C5B393005DA34F /* strawberry_shortcake.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B821C5B393005DA34F /* strawberry_shortcake.json */; };
+		D190631F21C5B393005DA34F /* sushi.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062B921C5B393005DA34F /* sushi.json */; };
+		D190632021C5B393005DA34F /* lobster_bisque.json in Resources */ = {isa = PBXBuildFile; fileRef = D19062BA21C5B393005DA34F /* lobster_bisque.json */; };
 		D1BB0304211A0BD200E9E79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0303211A0BD200E9E79C /* AppDelegate.swift */; };
 		D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0305211A0BD200E9E79C /* ViewController.swift */; };
 		D1BB0309211A0BD200E9E79C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BB0307211A0BD200E9E79C /* Main.storyboard */; };
@@ -21,9 +126,11 @@
 		D1BB031C211A0BD200E9E79C /* CalorieCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB031B211A0BD200E9E79C /* CalorieCounterTests.swift */; };
 		D1BB0327211A0BD200E9E79C /* CalorieCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB0326211A0BD200E9E79C /* CalorieCounterUITests.swift */; };
 		D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEDEDE211A7C5700449F2C /* APIManager.swift */; };
-		D1D720E221C467DD00D14156 /* donuts.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D720E121C467DD00D14156 /* donuts.json */; };
 		D1D720E421C4684100D14156 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E321C4684100D14156 /* JsonManager.swift */; };
 		D1D720E621C4950100D14156 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */; };
+		D1D720E821C4C79E00D14156 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E721C4C79E00D14156 /* DataManager.swift */; };
+		D1D720EA21C4D12700D14156 /* TodaysFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720E921C4D12700D14156 /* TodaysFoodView.swift */; };
+		D1D720EC21C4D2DE00D14156 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D720EB21C4D2DE00D14156 /* FoodItemCell.swift */; };
 		E0EA6E4395393F0CF7D1F7E4 /* Pods_CalorieCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A62CCF2EE7C36A0B8BE281 /* Pods_CalorieCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +158,9 @@
 		5C067CCB9B9E923E95CA9ED3 /* Pods-CalorieCounterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterUITests/Pods-CalorieCounterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83FB20775576E0FC987A7505 /* Pods-CalorieCounterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterUITests/Pods-CalorieCounterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AABE86F6210F2297BED5C258 /* Pods_CalorieCounterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11306CB21C6F5D0005798EC /* fruitAndFood.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = fruitAndFood.mlmodel; sourceTree = "<group>"; };
+		D11306CD21C7023F005798EC /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		D11306D021C762F1005798EC /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		D11D2E76211AB27700CF4C44 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		D13E6160211AAABB008D48C5 /* HKGrotesk-RegularLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-RegularLegacy.ttf"; sourceTree = "<group>"; };
@@ -73,6 +183,108 @@
 		D13E6171211AAAC2008D48C5 /* HKGrotesk-LightLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-LightLegacy.ttf"; sourceTree = "<group>"; };
 		D13E6172211AAAC2008D48C5 /* HKGrotesk-BoldLegacy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKGrotesk-BoldLegacy.ttf"; sourceTree = "<group>"; };
 		D16B0834211A2010009E9877 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		D190625521C5B385005DA34F /* beef_tartare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beef_tartare.json; sourceTree = "<group>"; };
+		D190625621C5B386005DA34F /* dumplings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dumplings.json; sourceTree = "<group>"; };
+		D190625721C5B386005DA34F /* lasagna.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lasagna.json; sourceTree = "<group>"; };
+		D190625821C5B386005DA34F /* grilled_cheese_sandwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grilled_cheese_sandwich.json; sourceTree = "<group>"; };
+		D190625921C5B386005DA34F /* spaghetti_bolognese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spaghetti_bolognese.json; sourceTree = "<group>"; };
+		D190625A21C5B386005DA34F /* baklava.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baklava.json; sourceTree = "<group>"; };
+		D190625B21C5B386005DA34F /* filet_mignon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filet_mignon.json; sourceTree = "<group>"; };
+		D190625C21C5B386005DA34F /* spring_rolls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spring_rolls.json; sourceTree = "<group>"; };
+		D190625D21C5B387005DA34F /* waffles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waffles.json; sourceTree = "<group>"; };
+		D190625E21C5B387005DA34F /* hummus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hummus.json; sourceTree = "<group>"; };
+		D190625F21C5B387005DA34F /* risotto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = risotto.json; sourceTree = "<group>"; };
+		D190626021C5B387005DA34F /* peking_duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peking_duck.json; sourceTree = "<group>"; };
+		D190626121C5B387005DA34F /* nachos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nachos.json; sourceTree = "<group>"; };
+		D190626221C5B387005DA34F /* cheese_plate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cheese_plate.json; sourceTree = "<group>"; };
+		D190626321C5B387005DA34F /* bruschetta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bruschetta.json; sourceTree = "<group>"; };
+		D190626421C5B387005DA34F /* falafel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = falafel.json; sourceTree = "<group>"; };
+		D190626521C5B388005DA34F /* french_toast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = french_toast.json; sourceTree = "<group>"; };
+		D190626621C5B388005DA34F /* escargots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = escargots.json; sourceTree = "<group>"; };
+		D190626721C5B388005DA34F /* croque_madame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = croque_madame.json; sourceTree = "<group>"; };
+		D190626821C5B388005DA34F /* oysters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oysters.json; sourceTree = "<group>"; };
+		D190626921C5B388005DA34F /* bread_pudding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bread_pudding.json; sourceTree = "<group>"; };
+		D190626A21C5B388005DA34F /* frozen_yogurt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = frozen_yogurt.json; sourceTree = "<group>"; };
+		D190626B21C5B388005DA34F /* beef_carpaccio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beef_carpaccio.json; sourceTree = "<group>"; };
+		D190626C21C5B388005DA34F /* breakfast_burrito.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breakfast_burrito.json; sourceTree = "<group>"; };
+		D190626D21C5B389005DA34F /* grilled_salmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grilled_salmon.json; sourceTree = "<group>"; };
+		D190626E21C5B389005DA34F /* beignets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beignets.json; sourceTree = "<group>"; };
+		D190626F21C5B389005DA34F /* fried_rice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fried_rice.json; sourceTree = "<group>"; };
+		D190627021C5B389005DA34F /* ceviche.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ceviche.json; sourceTree = "<group>"; };
+		D190627121C5B389005DA34F /* scallops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scallops.json; sourceTree = "<group>"; };
+		D190627221C5B389005DA34F /* crab_cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crab_cakes.json; sourceTree = "<group>"; };
+		D190627321C5B389005DA34F /* churros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = churros.json; sourceTree = "<group>"; };
+		D190627421C5B38A005DA34F /* cup_cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cup_cakes.json; sourceTree = "<group>"; };
+		D190627521C5B38A005DA34F /* gnocchi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gnocchi.json; sourceTree = "<group>"; };
+		D190627621C5B38A005DA34F /* steak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = steak.json; sourceTree = "<group>"; };
+		D190627721C5B38A005DA34F /* shrimp_and_grits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shrimp_and_grits.json; sourceTree = "<group>"; };
+		D190627821C5B38A005DA34F /* edamame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = edamame.json; sourceTree = "<group>"; };
+		D190627921C5B38A005DA34F /* ravioli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ravioli.json; sourceTree = "<group>"; };
+		D190627A21C5B38A005DA34F /* baby_back_ribs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baby_back_ribs.json; sourceTree = "<group>"; };
+		D190627B21C5B38A005DA34F /* apple_pie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apple_pie.json; sourceTree = "<group>"; };
+		D190627C21C5B38B005DA34F /* greek_salad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greek_salad.json; sourceTree = "<group>"; };
+		D190627D21C5B38B005DA34F /* tacos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tacos.json; sourceTree = "<group>"; };
+		D190627E21C5B38B005DA34F /* sashimi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sashimi.json; sourceTree = "<group>"; };
+		D190627F21C5B38B005DA34F /* chocolate_cake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_cake.json; sourceTree = "<group>"; };
+		D190628021C5B38B005DA34F /* club_sandwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = club_sandwich.json; sourceTree = "<group>"; };
+		D190628121C5B38B005DA34F /* deviled_eggs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deviled_eggs.json; sourceTree = "<group>"; };
+		D190628221C5B38B005DA34F /* onion_rings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onion_rings.json; sourceTree = "<group>"; };
+		D190628321C5B38B005DA34F /* ramen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ramen.json; sourceTree = "<group>"; };
+		D190628421C5B38C005DA34F /* hamburger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hamburger.json; sourceTree = "<group>"; };
+		D190628521C5B38C005DA34F /* creme_brulee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = creme_brulee.json; sourceTree = "<group>"; };
+		D190628621C5B38C005DA34F /* chicken_curry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chicken_curry.json; sourceTree = "<group>"; };
+		D190628721C5B38C005DA34F /* chocolate_mousse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_mousse.json; sourceTree = "<group>"; };
+		D190628821C5B38C005DA34F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D190628921C5B38C005DA34F /* fish_and_chips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fish_and_chips.json; sourceTree = "<group>"; };
+		D190628A21C5B38C005DA34F /* eggs_benedict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eggs_benedict.json; sourceTree = "<group>"; };
+		D190628B21C5B38C005DA34F /* tiramisu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tiramisu.json; sourceTree = "<group>"; };
+		D190628C21C5B38D005DA34F /* foie_gras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foie_gras.json; sourceTree = "<group>"; };
+		D190628D21C5B38D005DA34F /* macaroni_and_cheese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macaroni_and_cheese.json; sourceTree = "<group>"; };
+		D190628E21C5B38D005DA34F /* chicken_quesadilla.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chicken_quesadilla.json; sourceTree = "<group>"; };
+		D190628F21C5B38D005DA34F /* prime_rib.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prime_rib.json; sourceTree = "<group>"; };
+		D190629021C5B38D005DA34F /* french_onion_soup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = french_onion_soup.json; sourceTree = "<group>"; };
+		D190629121C5B38D005DA34F /* cheesecake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cheesecake.json; sourceTree = "<group>"; };
+		D190629221C5B38D005DA34F /* guacamole.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guacamole.json; sourceTree = "<group>"; };
+		D190629321C5B38D005DA34F /* miso_soup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = miso_soup.json; sourceTree = "<group>"; };
+		D190629421C5B38E005DA34F /* ice_cream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ice_cream.json; sourceTree = "<group>"; };
+		D190629521C5B38E005DA34F /* panna_cotta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panna_cotta.json; sourceTree = "<group>"; };
+		D190629621C5B38E005DA34F /* clam_chowder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clam_chowder.json; sourceTree = "<group>"; };
+		D190629721C5B38E005DA34F /* paella.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paella.json; sourceTree = "<group>"; };
+		D190629821C5B38E005DA34F /* caesar_salad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = caesar_salad.json; sourceTree = "<group>"; };
+		D190629921C5B38E005DA34F /* pizza.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pizza.json; sourceTree = "<group>"; };
+		D190629A21C5B38E005DA34F /* pancakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pancakes.json; sourceTree = "<group>"; };
+		D190629B21C5B38E005DA34F /* bibimbap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bibimbap.json; sourceTree = "<group>"; };
+		D190629C21C5B38F005DA34F /* huevos_rancheros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huevos_rancheros.json; sourceTree = "<group>"; };
+		D190629D21C5B38F005DA34F /* hot_and_sour_soup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hot_and_sour_soup.json; sourceTree = "<group>"; };
+		D190629E21C5B38F005DA34F /* takoyaki.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = takoyaki.json; sourceTree = "<group>"; };
+		D190629F21C5B38F005DA34F /* pho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pho.json; sourceTree = "<group>"; };
+		D19062A021C5B38F005DA34F /* fried_calamari.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fried_calamari.json; sourceTree = "<group>"; };
+		D19062A121C5B38F005DA34F /* pad_thai.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pad_thai.json; sourceTree = "<group>"; };
+		D19062A221C5B38F005DA34F /* macarons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macarons.json; sourceTree = "<group>"; };
+		D19062A321C5B38F005DA34F /* red_velvet_cake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = red_velvet_cake.json; sourceTree = "<group>"; };
+		D19062A421C5B390005DA34F /* mussels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mussels.json; sourceTree = "<group>"; };
+		D19062A521C5B390005DA34F /* pork_chop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pork_chop.json; sourceTree = "<group>"; };
+		D19062A621C5B390005DA34F /* hot_dog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hot_dog.json; sourceTree = "<group>"; };
+		D19062A721C5B390005DA34F /* garlic_bread.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = garlic_bread.json; sourceTree = "<group>"; };
+		D19062A821C5B390005DA34F /* tuna_tartare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tuna_tartare.json; sourceTree = "<group>"; };
+		D19062A921C5B390005DA34F /* carrot_cake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carrot_cake.json; sourceTree = "<group>"; };
+		D19062AA21C5B390005DA34F /* seaweed_salad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seaweed_salad.json; sourceTree = "<group>"; };
+		D19062AB21C5B390005DA34F /* french_fries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = french_fries.json; sourceTree = "<group>"; };
+		D19062AC21C5B391005DA34F /* samosa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samosa.json; sourceTree = "<group>"; };
+		D19062AD21C5B391005DA34F /* beet_salad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beet_salad.json; sourceTree = "<group>"; };
+		D19062AE21C5B391005DA34F /* omelette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = omelette.json; sourceTree = "<group>"; };
+		D19062AF21C5B391005DA34F /* spaghetti_carbonara.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spaghetti_carbonara.json; sourceTree = "<group>"; };
+		D19062B021C5B391005DA34F /* gyoza.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gyoza.json; sourceTree = "<group>"; };
+		D19062B121C5B391005DA34F /* pulled_pork_sandwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pulled_pork_sandwich.json; sourceTree = "<group>"; };
+		D19062B221C5B392005DA34F /* cannoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cannoli.json; sourceTree = "<group>"; };
+		D19062B321C5B392005DA34F /* poutine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poutine.json; sourceTree = "<group>"; };
+		D19062B421C5B392005DA34F /* chicken_wings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chicken_wings.json; sourceTree = "<group>"; };
+		D19062B521C5B392005DA34F /* lobster_roll_sandwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lobster_roll_sandwich.json; sourceTree = "<group>"; };
+		D19062B621C5B392005DA34F /* caprese_salad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = caprese_salad.json; sourceTree = "<group>"; };
+		D19062B721C5B392005DA34F /* donuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = donuts.json; sourceTree = "<group>"; };
+		D19062B821C5B393005DA34F /* strawberry_shortcake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strawberry_shortcake.json; sourceTree = "<group>"; };
+		D19062B921C5B393005DA34F /* sushi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sushi.json; sourceTree = "<group>"; };
+		D19062BA21C5B393005DA34F /* lobster_bisque.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lobster_bisque.json; sourceTree = "<group>"; };
 		D1BB0300211A0BD200E9E79C /* CalorieCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BB0303211A0BD200E9E79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1BB0305211A0BD200E9E79C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,9 +300,11 @@
 		D1BB0326211A0BD200E9E79C /* CalorieCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterUITests.swift; sourceTree = "<group>"; };
 		D1BB0328211A0BD200E9E79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CEDEDE211A7C5700449F2C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		D1D720E121C467DD00D14156 /* donuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = donuts.json; sourceTree = "<group>"; };
 		D1D720E321C4684100D14156 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
 		D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		D1D720E721C4C79E00D14156 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D1D720E921C4D12700D14156 /* TodaysFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysFoodView.swift; sourceTree = "<group>"; };
+		D1D720EB21C4D2DE00D14156 /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
 		D6B279A4F6896A479531D29C /* Pods-CalorieCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounterTests/Pods-CalorieCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E61C7668A3038DCBC638CBD0 /* Pods-CalorieCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter/Pods-CalorieCounter.release.xcconfig"; sourceTree = "<group>"; };
 		E67B18007E4AC64E3DFC150A /* Pods_CalorieCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				D16B0834211A2010009E9877 /* Food101.mlmodel */,
+				D11306CB21C6F5D0005798EC /* fruitAndFood.mlmodel */,
 				D1BB0302211A0BD200E9E79C /* CalorieCounter */,
 				D1BB031A211A0BD200E9E79C /* CalorieCounterTests */,
 				D1BB0325211A0BD200E9E79C /* CalorieCounterUITests */,
@@ -189,19 +404,24 @@
 		D1BB0302211A0BD200E9E79C /* CalorieCounter */ = {
 			isa = PBXGroup;
 			children = (
+				D11306D021C762F1005798EC /* labels.txt */,
 				D13E6173211AAB0C008D48C5 /* Fonts */,
 				D1BB0303211A0BD200E9E79C /* AppDelegate.swift */,
 				D1D720E021C465D300D14156 /* jsonFiles */,
 				D1BB0305211A0BD200E9E79C /* ViewController.swift */,
+				D11306CD21C7023F005798EC /* ChartViewController.swift */,
 				D1D720E521C4950100D14156 /* SideMenuTableViewController.swift */,
 				D1BB0307211A0BD200E9E79C /* Main.storyboard */,
+				D1D720EB21C4D2DE00D14156 /* FoodItemCell.swift */,
 				D1BB030D211A0BD200E9E79C /* Assets.xcassets */,
 				D1BB030F211A0BD200E9E79C /* LaunchScreen.storyboard */,
 				D1BB0312211A0BD200E9E79C /* Info.plist */,
 				D1BB030A211A0BD200E9E79C /* CalorieCounter.xcdatamodeld */,
 				D1CEDEDE211A7C5700449F2C /* APIManager.swift */,
+				D1D720E921C4D12700D14156 /* TodaysFoodView.swift */,
 				D1D720E321C4684100D14156 /* JsonManager.swift */,
 				D11D2E76211AB27700CF4C44 /* PopupView.swift */,
+				D1D720E721C4C79E00D14156 /* DataManager.swift */,
 				D11D2E78211AB4ED00CF4C44 /* FoodItem.swift */,
 			);
 			path = CalorieCounter;
@@ -228,7 +448,108 @@
 		D1D720E021C465D300D14156 /* jsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D1D720E121C467DD00D14156 /* donuts.json */,
+				D190627B21C5B38A005DA34F /* apple_pie.json */,
+				D190627A21C5B38A005DA34F /* baby_back_ribs.json */,
+				D190625A21C5B386005DA34F /* baklava.json */,
+				D190626B21C5B388005DA34F /* beef_carpaccio.json */,
+				D190625521C5B385005DA34F /* beef_tartare.json */,
+				D19062AD21C5B391005DA34F /* beet_salad.json */,
+				D190626E21C5B389005DA34F /* beignets.json */,
+				D190629B21C5B38E005DA34F /* bibimbap.json */,
+				D190626921C5B388005DA34F /* bread_pudding.json */,
+				D190626C21C5B388005DA34F /* breakfast_burrito.json */,
+				D190626321C5B387005DA34F /* bruschetta.json */,
+				D190629821C5B38E005DA34F /* caesar_salad.json */,
+				D19062B221C5B392005DA34F /* cannoli.json */,
+				D19062B621C5B392005DA34F /* caprese_salad.json */,
+				D19062A921C5B390005DA34F /* carrot_cake.json */,
+				D190627021C5B389005DA34F /* ceviche.json */,
+				D190626221C5B387005DA34F /* cheese_plate.json */,
+				D190629121C5B38D005DA34F /* cheesecake.json */,
+				D190628621C5B38C005DA34F /* chicken_curry.json */,
+				D190628E21C5B38D005DA34F /* chicken_quesadilla.json */,
+				D19062B421C5B392005DA34F /* chicken_wings.json */,
+				D190627F21C5B38B005DA34F /* chocolate_cake.json */,
+				D190628721C5B38C005DA34F /* chocolate_mousse.json */,
+				D190627321C5B389005DA34F /* churros.json */,
+				D190629621C5B38E005DA34F /* clam_chowder.json */,
+				D190628021C5B38B005DA34F /* club_sandwich.json */,
+				D190627221C5B389005DA34F /* crab_cakes.json */,
+				D190628521C5B38C005DA34F /* creme_brulee.json */,
+				D190626721C5B388005DA34F /* croque_madame.json */,
+				D190627421C5B38A005DA34F /* cup_cakes.json */,
+				D190628821C5B38C005DA34F /* data.json */,
+				D190628121C5B38B005DA34F /* deviled_eggs.json */,
+				D19062B721C5B392005DA34F /* donuts.json */,
+				D190625621C5B386005DA34F /* dumplings.json */,
+				D190627821C5B38A005DA34F /* edamame.json */,
+				D190628A21C5B38C005DA34F /* eggs_benedict.json */,
+				D190626621C5B388005DA34F /* escargots.json */,
+				D190626421C5B387005DA34F /* falafel.json */,
+				D190625B21C5B386005DA34F /* filet_mignon.json */,
+				D190628921C5B38C005DA34F /* fish_and_chips.json */,
+				D190628C21C5B38D005DA34F /* foie_gras.json */,
+				D19062AB21C5B390005DA34F /* french_fries.json */,
+				D190629021C5B38D005DA34F /* french_onion_soup.json */,
+				D190626521C5B388005DA34F /* french_toast.json */,
+				D19062A021C5B38F005DA34F /* fried_calamari.json */,
+				D190626F21C5B389005DA34F /* fried_rice.json */,
+				D190626A21C5B388005DA34F /* frozen_yogurt.json */,
+				D19062A721C5B390005DA34F /* garlic_bread.json */,
+				D190627521C5B38A005DA34F /* gnocchi.json */,
+				D190627C21C5B38B005DA34F /* greek_salad.json */,
+				D190625821C5B386005DA34F /* grilled_cheese_sandwich.json */,
+				D190626D21C5B389005DA34F /* grilled_salmon.json */,
+				D190629221C5B38D005DA34F /* guacamole.json */,
+				D19062B021C5B391005DA34F /* gyoza.json */,
+				D190628421C5B38C005DA34F /* hamburger.json */,
+				D190629D21C5B38F005DA34F /* hot_and_sour_soup.json */,
+				D19062A621C5B390005DA34F /* hot_dog.json */,
+				D190629C21C5B38F005DA34F /* huevos_rancheros.json */,
+				D190625E21C5B387005DA34F /* hummus.json */,
+				D190629421C5B38E005DA34F /* ice_cream.json */,
+				D190625721C5B386005DA34F /* lasagna.json */,
+				D19062BA21C5B393005DA34F /* lobster_bisque.json */,
+				D19062B521C5B392005DA34F /* lobster_roll_sandwich.json */,
+				D190628D21C5B38D005DA34F /* macaroni_and_cheese.json */,
+				D19062A221C5B38F005DA34F /* macarons.json */,
+				D190629321C5B38D005DA34F /* miso_soup.json */,
+				D19062A421C5B390005DA34F /* mussels.json */,
+				D190626121C5B387005DA34F /* nachos.json */,
+				D19062AE21C5B391005DA34F /* omelette.json */,
+				D190628221C5B38B005DA34F /* onion_rings.json */,
+				D190626821C5B388005DA34F /* oysters.json */,
+				D19062A121C5B38F005DA34F /* pad_thai.json */,
+				D190629721C5B38E005DA34F /* paella.json */,
+				D190629A21C5B38E005DA34F /* pancakes.json */,
+				D190629521C5B38E005DA34F /* panna_cotta.json */,
+				D190626021C5B387005DA34F /* peking_duck.json */,
+				D190629F21C5B38F005DA34F /* pho.json */,
+				D190629921C5B38E005DA34F /* pizza.json */,
+				D19062A521C5B390005DA34F /* pork_chop.json */,
+				D19062B321C5B392005DA34F /* poutine.json */,
+				D190628F21C5B38D005DA34F /* prime_rib.json */,
+				D19062B121C5B391005DA34F /* pulled_pork_sandwich.json */,
+				D190628321C5B38B005DA34F /* ramen.json */,
+				D190627921C5B38A005DA34F /* ravioli.json */,
+				D19062A321C5B38F005DA34F /* red_velvet_cake.json */,
+				D190625F21C5B387005DA34F /* risotto.json */,
+				D19062AC21C5B391005DA34F /* samosa.json */,
+				D190627E21C5B38B005DA34F /* sashimi.json */,
+				D190627121C5B389005DA34F /* scallops.json */,
+				D19062AA21C5B390005DA34F /* seaweed_salad.json */,
+				D190627721C5B38A005DA34F /* shrimp_and_grits.json */,
+				D190625921C5B386005DA34F /* spaghetti_bolognese.json */,
+				D19062AF21C5B391005DA34F /* spaghetti_carbonara.json */,
+				D190625C21C5B386005DA34F /* spring_rolls.json */,
+				D190627621C5B38A005DA34F /* steak.json */,
+				D19062B821C5B393005DA34F /* strawberry_shortcake.json */,
+				D19062B921C5B393005DA34F /* sushi.json */,
+				D190627D21C5B38B005DA34F /* tacos.json */,
+				D190629E21C5B38F005DA34F /* takoyaki.json */,
+				D190628B21C5B38C005DA34F /* tiramisu.json */,
+				D19062A821C5B390005DA34F /* tuna_tartare.json */,
+				D190625D21C5B387005DA34F /* waffles.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -359,10 +680,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D720E221C467DD00D14156 /* donuts.json in Resources */,
+				D19062FB21C5B393005DA34F /* panna_cotta.json in Resources */,
+				D19062D921C5B393005DA34F /* churros.json in Resources */,
+				D190631821C5B393005DA34F /* cannoli.json in Resources */,
+				D19062F021C5B393005DA34F /* eggs_benedict.json in Resources */,
+				D190630B21C5B393005DA34F /* pork_chop.json in Resources */,
+				D19062C521C5B393005DA34F /* risotto.json in Resources */,
+				D19062F821C5B393005DA34F /* guacamole.json in Resources */,
+				D190630F21C5B393005DA34F /* carrot_cake.json in Resources */,
+				D190630221C5B393005DA34F /* huevos_rancheros.json in Resources */,
+				D19062DD21C5B393005DA34F /* shrimp_and_grits.json in Resources */,
+				D19062DE21C5B393005DA34F /* edamame.json in Resources */,
+				D19062D221C5B393005DA34F /* breakfast_burrito.json in Resources */,
+				D190631121C5B393005DA34F /* french_fries.json in Resources */,
+				D19062FF21C5B393005DA34F /* pizza.json in Resources */,
+				D190631F21C5B393005DA34F /* sushi.json in Resources */,
+				D19062E421C5B393005DA34F /* sashimi.json in Resources */,
+				D19062F621C5B393005DA34F /* french_onion_soup.json in Resources */,
 				D1BB0311211A0BD200E9E79C /* LaunchScreen.storyboard in Resources */,
+				D190630321C5B393005DA34F /* hot_and_sour_soup.json in Resources */,
+				D190631E21C5B393005DA34F /* strawberry_shortcake.json in Resources */,
+				D19062BD21C5B393005DA34F /* lasagna.json in Resources */,
+				D190630721C5B393005DA34F /* pad_thai.json in Resources */,
+				D19062C821C5B393005DA34F /* cheese_plate.json in Resources */,
+				D190631621C5B393005DA34F /* gyoza.json in Resources */,
+				D19062C421C5B393005DA34F /* hummus.json in Resources */,
+				D19062BC21C5B393005DA34F /* dumplings.json in Resources */,
+				D19062E721C5B393005DA34F /* deviled_eggs.json in Resources */,
+				D19062CA21C5B393005DA34F /* falafel.json in Resources */,
+				D19062EF21C5B393005DA34F /* fish_and_chips.json in Resources */,
+				D19062D121C5B393005DA34F /* beef_carpaccio.json in Resources */,
+				D19062C921C5B393005DA34F /* bruschetta.json in Resources */,
+				D190631C21C5B393005DA34F /* caprese_salad.json in Resources */,
+				D19062CE21C5B393005DA34F /* oysters.json in Resources */,
+				D190630D21C5B393005DA34F /* garlic_bread.json in Resources */,
+				D19062F921C5B393005DA34F /* miso_soup.json in Resources */,
+				D190630021C5B393005DA34F /* pancakes.json in Resources */,
+				D19062F221C5B393005DA34F /* foie_gras.json in Resources */,
+				D19062D321C5B393005DA34F /* grilled_salmon.json in Resources */,
+				D19062D821C5B393005DA34F /* crab_cakes.json in Resources */,
+				D19062E321C5B393005DA34F /* tacos.json in Resources */,
+				D19062F421C5B393005DA34F /* chicken_quesadilla.json in Resources */,
+				D19062BB21C5B393005DA34F /* beef_tartare.json in Resources */,
+				D190631421C5B393005DA34F /* omelette.json in Resources */,
+				D19062CB21C5B393005DA34F /* french_toast.json in Resources */,
+				D190630421C5B393005DA34F /* takoyaki.json in Resources */,
+				D19062DF21C5B393005DA34F /* ravioli.json in Resources */,
+				D190630521C5B393005DA34F /* pho.json in Resources */,
+				D190630921C5B393005DA34F /* red_velvet_cake.json in Resources */,
+				D190631021C5B393005DA34F /* seaweed_salad.json in Resources */,
+				D190631A21C5B393005DA34F /* chicken_wings.json in Resources */,
+				D19062C321C5B393005DA34F /* waffles.json in Resources */,
+				D190631521C5B393005DA34F /* spaghetti_carbonara.json in Resources */,
+				D19062E821C5B393005DA34F /* onion_rings.json in Resources */,
+				D19062DA21C5B393005DA34F /* cup_cakes.json in Resources */,
+				D19062F321C5B393005DA34F /* macaroni_and_cheese.json in Resources */,
+				D19062E921C5B393005DA34F /* ramen.json in Resources */,
+				D19062F521C5B393005DA34F /* prime_rib.json in Resources */,
+				D19062C121C5B393005DA34F /* filet_mignon.json in Resources */,
+				D19062E021C5B393005DA34F /* baby_back_ribs.json in Resources */,
+				D19062E121C5B393005DA34F /* apple_pie.json in Resources */,
+				D19062DB21C5B393005DA34F /* gnocchi.json in Resources */,
+				D190630621C5B393005DA34F /* fried_calamari.json in Resources */,
+				D190631D21C5B393005DA34F /* donuts.json in Resources */,
+				D19062D621C5B393005DA34F /* ceviche.json in Resources */,
+				D190630821C5B393005DA34F /* macarons.json in Resources */,
+				D19062BE21C5B393005DA34F /* grilled_cheese_sandwich.json in Resources */,
 				D1BB030E211A0BD200E9E79C /* Assets.xcassets in Resources */,
+				D19062EE21C5B393005DA34F /* data.json in Resources */,
+				D190630C21C5B393005DA34F /* hot_dog.json in Resources */,
+				D11306D121C762F2005798EC /* labels.txt in Resources */,
+				D19062E521C5B393005DA34F /* chocolate_cake.json in Resources */,
+				D190630E21C5B393005DA34F /* tuna_tartare.json in Resources */,
+				D190630121C5B393005DA34F /* bibimbap.json in Resources */,
+				D19062ED21C5B393005DA34F /* chocolate_mousse.json in Resources */,
+				D19062BF21C5B393005DA34F /* spaghetti_bolognese.json in Resources */,
+				D19062D521C5B393005DA34F /* fried_rice.json in Resources */,
+				D190631221C5B393005DA34F /* samosa.json in Resources */,
+				D19062D021C5B393005DA34F /* frozen_yogurt.json in Resources */,
+				D190631B21C5B393005DA34F /* lobster_roll_sandwich.json in Resources */,
+				D190631921C5B393005DA34F /* poutine.json in Resources */,
+				D19062D721C5B393005DA34F /* scallops.json in Resources */,
+				D19062C021C5B393005DA34F /* baklava.json in Resources */,
+				D19062C621C5B393005DA34F /* peking_duck.json in Resources */,
+				D19062FC21C5B393005DA34F /* clam_chowder.json in Resources */,
+				D190632021C5B393005DA34F /* lobster_bisque.json in Resources */,
+				D19062FE21C5B393005DA34F /* caesar_salad.json in Resources */,
+				D19062EA21C5B393005DA34F /* hamburger.json in Resources */,
+				D19062E221C5B393005DA34F /* greek_salad.json in Resources */,
+				D19062CF21C5B393005DA34F /* bread_pudding.json in Resources */,
+				D19062F121C5B393005DA34F /* tiramisu.json in Resources */,
+				D19062EB21C5B393005DA34F /* creme_brulee.json in Resources */,
+				D19062CD21C5B393005DA34F /* croque_madame.json in Resources */,
+				D190631721C5B393005DA34F /* pulled_pork_sandwich.json in Resources */,
+				D19062EC21C5B393005DA34F /* chicken_curry.json in Resources */,
+				D19062F721C5B393005DA34F /* cheesecake.json in Resources */,
+				D19062C221C5B393005DA34F /* spring_rolls.json in Resources */,
 				D1BB0309211A0BD200E9E79C /* Main.storyboard in Resources */,
+				D190631321C5B393005DA34F /* beet_salad.json in Resources */,
+				D19062D421C5B393005DA34F /* beignets.json in Resources */,
+				D19062CC21C5B393005DA34F /* escargots.json in Resources */,
+				D19062FA21C5B393005DA34F /* ice_cream.json in Resources */,
+				D19062C721C5B393005DA34F /* nachos.json in Resources */,
+				D19062E621C5B393005DA34F /* club_sandwich.json in Resources */,
+				D190630A21C5B393005DA34F /* mussels.json in Resources */,
+				D19062FD21C5B393005DA34F /* paella.json in Resources */,
+				D19062DC21C5B393005DA34F /* steak.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +893,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CalorieCounter/Pods-CalorieCounter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCSVExport/SwiftCSVExport.framework",
@@ -479,6 +903,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCSVExport.framework",
@@ -547,15 +972,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D720EC21C4D2DE00D14156 /* FoodItemCell.swift in Sources */,
+				D11306CE21C7023F005798EC /* ChartViewController.swift in Sources */,
 				D11D2E79211AB4ED00CF4C44 /* FoodItem.swift in Sources */,
+				D1D720E821C4C79E00D14156 /* DataManager.swift in Sources */,
 				D1D720E421C4684100D14156 /* JsonManager.swift in Sources */,
 				D1BB0306211A0BD200E9E79C /* ViewController.swift in Sources */,
 				D16B0835211A2010009E9877 /* Food101.mlmodel in Sources */,
+				D11306CC21C6F5D0005798EC /* fruitAndFood.mlmodel in Sources */,
 				D1D720E621C4950100D14156 /* SideMenuTableViewController.swift in Sources */,
 				D1CEDEDF211A7C5700449F2C /* APIManager.swift in Sources */,
 				D11D2E77211AB27700CF4C44 /* PopupView.swift in Sources */,
 				D1BB030C211A0BD200E9E79C /* CalorieCounter.xcdatamodeld in Sources */,
 				D1BB0304211A0BD200E9E79C /* AppDelegate.swift in Sources */,
+				D1D720EA21C4D12700D14156 /* TodaysFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

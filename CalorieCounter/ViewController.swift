@@ -33,6 +33,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     private var model: Food101!
     private var apiManager = APIManager()
     private var jsonManager = JsonManager()
+    private var dataManager = DataManager()
     
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle{
@@ -46,6 +47,11 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
         predictionLabel.text = "";
         model = Food101()
         setupSideMenu()
+        self.navigationController?.navigationBar.backItem?.title = "TEXT1"
+        
+        
+        
+        dataManager.createDummyData()
         
         
     }

@@ -14,6 +14,7 @@ target 'CalorieCounter' do
   pod 'SwiftCSVExport'
   pod 'NVActivityIndicatorView'
   pod 'SideMenu'
+  pod 'Charts'
 
   target 'CalorieCounterTests' do
     inherit! :search_paths

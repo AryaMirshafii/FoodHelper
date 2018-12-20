@@ -28,7 +28,7 @@ class SideMenuTableViewController: UITableViewController {
         imageView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         tableView.backgroundView = imageView
         */
-        
+        self.navigationController?.navigationBar.backItem?.title = "TEXT2"
         tableView.backgroundColor  = UIColor.white
     }
     

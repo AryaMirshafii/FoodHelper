@@ -56,6 +56,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     
     
     
+    @IBOutlet weak var addFoodButton: UIButton!
     
     
     
@@ -63,8 +64,11 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var mainScrollView: UIScrollView!
     
     
-    var foodItem: FoodItem!
     
+    
+    var foodItem: FoodItem!
+    var dataManager:DataManager!
+    var didSave = false
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.cornerRadius = 25
@@ -90,23 +94,101 @@ class PopupView: UIViewController, UIScrollViewDelegate{
         
         
         
+        addFoodButton.layer.cornerRadius = 22
+        addFoodButton.clipsToBounds = true
+        
+        dataManager = DataManager()
+        
     }
     
     private func setLabels(){
-        calorieLabel.text = "Calories: " + foodItem.calories
-        carbLabel.text = "Carbohydrates: " + foodItem.totalCarbs
-        sodiumLabel.text = "Sodium: " + foodItem.sodium
-        sugarLabel.text = "Sugar: " + foodItem.sugars
+        
+        if(foodItem.calories != 0){
+            calorieLabel.text = String(format: "Calories: %.1f",foodItem.calories)
+        }else {
+            calorieLabel.text = "Calories: N/A"
+        }
         
         
-        cholesterolLabel.text = "Cholesterol: " + foodItem.cholesterol
-        saturatedFatLabel.text = "Sat Fat: " + foodItem.saturatedFat
-        unsaturatedFatLabel.text = "Unsat Fat: " + foodItem.unsaturatedFat
-        totalFatLabel.text = "Total Fat: " + foodItem.totalFat
         
-        fiberLabel.text = "Fiber: " +  foodItem.fiber
-        potassiumLabel.text = "Potassium: " + foodItem.potassium
-        proteinLabel.text = "Protein: " + foodItem.protein
+        if(foodItem.totalCarbs != 0){
+            carbLabel.text = String(format: "Carbohydrates: %.1f",foodItem.totalCarbs)
+        }else{
+            carbLabel.text = "Carbohydrates: N/A"
+        }
+        
+        
+        
+        if(foodItem.sodium != 0){
+            sodiumLabel.text = String(format: "Sodium: %.1f",foodItem.sodium)
+        }else{
+            sodiumLabel.text = "Sodium: N/A"
+        }
+        
+        
+        
+        if(foodItem.sugars != 0){
+            sugarLabel.text = String(format: "Sugar: %.1f", foodItem.sugars)
+        }else{
+            sugarLabel.text = "Sugar: N/A"
+        }
+        
+        
+        
+        if(foodItem.cholesterol != 0){
+            cholesterolLabel.text = String(format: "Cholesterol: %.1f", foodItem.cholesterol)
+        }else{
+            cholesterolLabel.text = "Cholesterol: N/A"
+        }
+        
+        
+        
+        if(foodItem.saturatedFat != 0){
+            saturatedFatLabel.text = String(format: "Sat Fat: %.1f",foodItem.saturatedFat)
+        }else {
+            saturatedFatLabel.text = "Sat Fat: N/A"
+        }
+        
+        
+        
+        if(foodItem.unsaturatedFat != 0){
+            unsaturatedFatLabel.text = String(format: "Unsat Fat: %.1f",foodItem.unsaturatedFat)
+        }else{
+            unsaturatedFatLabel.text = "Unsat Fat: N/A"
+        }
+        
+        
+        
+        if(foodItem.totalFat != 0){
+            totalFatLabel.text = String(format: "Total Fat: %.1f",foodItem.totalFat)
+        }else {
+            totalFatLabel.text = "Total Fat: N/A"
+        }
+        
+        
+        
+        if(foodItem.fiber != 0){
+            fiberLabel.text = String(format: "Fiber: %.1f",foodItem.fiber)
+        }else {
+            fiberLabel.text = "Fiber: N/A"
+        }
+        
+        
+        
+        if(foodItem.potassium != 0){
+            potassiumLabel.text = String(format: "Potassium: %.1f",foodItem.potassium)
+        }else {
+            potassiumLabel.text = "Potassium: N/A"
+        }
+        
+        
+        
+        if(foodItem.protein != 0){
+            proteinLabel.text =  String(format: "Protein: %.1f",foodItem.protein)
+        }else {
+            proteinLabel.text =  "Protein: N/A"
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -335,7 +417,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x/scrollView.bounds.width)
-        print("The page number is: " + String(describing: pageNumber))
+        //print("The page number is: " + String(describing: pageNumber))
         pageIndex.currentPage = Int(pageNumber)
     }
     
@@ -347,6 +429,20 @@ class PopupView: UIViewController, UIScrollViewDelegate{
         mainScrollView.setContentOffset(currentPos, animated: false)
     }
     
+    
+    
+    
+    
+    @IBAction func saveFood(_ sender: Any) {
+        if(!didSave){
+            foodItem.save()
+            print("Saving food with name: " + foodItem.name)
+            print("The count is " + String(dataManager.countFoods()))
+            didSave = false
+        }
+        
+        
+    }
     
     
     

@@ -21,6 +21,7 @@ class APIManager{
     
     
     func search(Query: String, completion: @escaping (FoodItem ,Bool) -> Void){
+        /**
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "x-app-id":"c6b5c1d1",
@@ -121,32 +122,11 @@ class APIManager{
                     completion(FoodItem(),false)
                 }
         }
+ 
+    */
     }
-    func betterSearch(query: String) -> FoodItem{
-        let newFood = FoodItem(Name: query)
-        do {
-            if let file = Bundle.main.url(forResource: query, withExtension: "json") {
-                let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let object = json as? [String: Any] {
-                    print("Sucess arya")
-                    
-                    
-                    print(object["nf_calories"])
-                    
-                    //print(object)
-                } else {
-                    print("JSON is invalid")
-                }
-            } else {
-                print("no file")
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        return newFood
-    }
+    
+    
 
     func isConnectedToInternet() -> Bool {
         return NetworkReachabilityManager()!.isReachable
