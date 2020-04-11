@@ -333,6 +333,37 @@ class DataManager{
             }
             foodTable[date.nearestDay()]?.append(food4)
             
+            
+            
+            let food5 = readLabel(index: randomInt)
+            food5.dateCreated = date;
+            food5.save()
+            
+            if(foodTable[date.nearestDay()] == nil){
+                foodTable[date.nearestDay()] = [FoodItem]()
+            }
+            foodTable[date.nearestDay()]?.append(food5)
+            
+            
+            let food6 = readLabel(index: randomInt)
+            food6.dateCreated = date;
+            food6.save()
+            
+            if(foodTable[date.nearestDay()] == nil){
+                foodTable[date.nearestDay()] = [FoodItem]()
+            }
+            foodTable[date.nearestDay()]?.append(food6)
+            
+            
+            let food7 = readLabel(index: randomInt)
+            food7.dateCreated = date;
+            food7.save()
+            
+            if(foodTable[date.nearestDay()] == nil){
+                foodTable[date.nearestDay()] = [FoodItem]()
+            }
+            foodTable[date.nearestDay()]?.append(food7)
+            
             count += 4
             date += dinner
         }
