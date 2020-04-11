@@ -13,7 +13,7 @@ target 'CalorieCounter' do
   pod 'SwiftyJSON'
   pod 'SwiftCSVExport'
   pod 'NVActivityIndicatorView'
-  pod 'SideMenu'
+  pod 'SideMenuSwift'
   pod 'Charts'
 
   target 'CalorieCounterTests' do

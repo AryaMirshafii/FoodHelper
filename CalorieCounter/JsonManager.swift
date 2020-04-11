@@ -13,7 +13,9 @@ import UIKit
 class JsonManager{
     
     func search(query: String) -> FoodItem{
-        var managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        print("Food name is " + query)
+        let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let newFood = FoodItem(Name: query, insertIntoManagedObjectContext: managedObjectContext)
         
         
@@ -27,6 +29,7 @@ class JsonManager{
                     //print(object["nf_calories"])
                     
                     if let cals = object["nf_calories"] as? Double{
+                        print("Cals is" + String(cals))
                         newFood.calories = cals
                         
                     }else {
@@ -142,7 +145,7 @@ class JsonManager{
                     print("JSON is invalid")
                 }
             } else {
-                //print("no file found")
+                print("no file found")
             }
         } catch {
             print(error.localizedDescription)

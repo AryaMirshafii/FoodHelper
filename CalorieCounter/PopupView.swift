@@ -71,7 +71,7 @@ class PopupView: UIViewController, UIScrollViewDelegate{
     var didSave = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.layer.cornerRadius = 25
+        view.layer.cornerRadius = 10
         
         //setImage(foodName: foodItem.name)
         //view.clipsToBounds = true

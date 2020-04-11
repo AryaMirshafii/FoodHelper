@@ -75,7 +75,7 @@ class DataManager{
         
         for index in 0..<everything.count{
             if(!everything[index].objectID.isTemporaryID){
-                print("Adding food to table")
+                //print("Adding food to table")
                 if(foodTable[everything[index].dateCreated.nearestDay()] == nil){
                     foodTable[everything[index].dateCreated.nearestDay()] = [FoodItem]()
                 }
@@ -90,12 +90,18 @@ class DataManager{
     
     func getCalsPerDay() -> [Date: Double]{
         var toReturn =  [Date: Double]()
+        //let indx = IndexPath(row: 0, section: 0)
+        let date = Date() - 2592000
+        let indx = foodTable.index(forKey: date.nearestDay())
         
-        for key in foodTable.keys{
+        for key in foodTable.keys.suffix(from: indx!){
             var total:Double = 0
             for food in foodTable[key]!{
+                print("Summing for food name " + food.name)
+                print("Summing " + String(food.calories))
                 total += food.calories
             }
+            //print("THe average calorie count is:" +  String(total))
             toReturn[key] = total
         }
         
@@ -264,7 +270,7 @@ class DataManager{
     
     func readLabel(index:Int) ->FoodItem{
         var foodNames = ["Apple pie","Baby back ribs","Baklava","Beef carpaccio","Beef tartare","Beet salad","Beignets","Bibimbap","Bread pudding","Breakfast burrito","Bruschetta","Caesar salad","Cannoli","Caprese salad","Carrot cake","Ceviche","Cheesecake","Cheese plate","Chicken curry","Chicken quesadilla","Chicken wings","Chocolate cake","Chocolate mousse","Churros","Clam chowder","Club sandwich","Crab cakes","Creme brulee","Croque madame","Cup cakes","Deviled eggs","Donuts","Dumplings","Edamame","Eggs benedict","Escargots","Falafel","Filet mignon","Fish and chips","Foie gras","French fries","French onion soup","French toast","Fried calamari","Fried rice","Frozen yogurt","Garlic bread","Gnocchi","Greek salad","Grilled cheese sandwich","Grilled salmon","Guacamole","Gyoza","Hamburger","Hot and sour soup","Hot dog","Huevos rancheros","Hummus","Ice cream","Lasagna","Lobster bisque","Lobster roll sandwich","Macaroni and cheese","Macarons","Miso soup","Mussels","Nachos","Omelette","Onion rings","Oysters","Pad thai","Paella","Pancakes","Panna cotta","Peking duck","Pho","Pizza","Pork chop","Poutine","Prime rib","Pulled pork sandwich","Ramen","Ravioli","Red velvet cake","Risotto","Samosa","Sashimi","Scallops","Seaweed salad","Shrimp and grits","Spaghetti bolognese","Spaghetti carbonara","Spring rolls","Steak","Strawberry shortcake","Sushi","Tacos","Takoyaki","Tiramisu","Tuna tartare","Waffles"]
-        return jsonManager.search(query: foodNames[index])
+        return jsonManager.search(query: foodNames[index].lowercased().replacingOccurrences(of:  " " , with: "_"))
         
     }
     
@@ -288,6 +294,7 @@ class DataManager{
             var randomInt = Int.random(in: 0..<101)
             let food1 = readLabel(index: randomInt)
             food1.dateCreated = date;
+            print("Food 1 calories is : " + String(food1.calories))
             food1.save()
             if(foodTable[date.nearestDay()] == nil){
                 foodTable[date.nearestDay()] = [FoodItem]()

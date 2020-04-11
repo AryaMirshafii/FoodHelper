@@ -52,8 +52,9 @@ public extension NVActivityIndicatorViewable where Self: UIViewController {
      - parameter padding:              padding of activity indicator view.
      - parameter displayTimeThreshold: display time threshold to actually display UI blocker.
      - parameter minimumDisplayTime:   minimum display time of UI blocker.
+     - parameter fadeInAnimation:      fade in animation.
      */
-    public func startAnimating(
+    func startAnimating(
         _ size: CGSize? = nil,
         message: String? = nil,
         messageFont: UIFont? = nil,
@@ -63,7 +64,8 @@ public extension NVActivityIndicatorViewable where Self: UIViewController {
         displayTimeThreshold: Int? = nil,
         minimumDisplayTime: Int? = nil,
         backgroundColor: UIColor? = nil,
-        textColor: UIColor? = nil) {
+        textColor: UIColor? = nil,
+        fadeInAnimation: FadeInAnimation? = NVActivityIndicatorView.DEFAULT_FADE_IN_ANIMATION) {
         let activityData = ActivityData(size: size,
                                         message: message,
                                         messageFont: messageFont,
@@ -75,13 +77,15 @@ public extension NVActivityIndicatorViewable where Self: UIViewController {
                                         backgroundColor: backgroundColor,
                                         textColor: textColor)
 
-        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData, fadeInAnimation)
     }
 
     /**
      Remove UI blocker.
+
+     - parameter fadeOutAnimation: fade out animation.
      */
-    public func stopAnimating() {
-        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+    func stopAnimating(_ fadeOutAnimation: FadeOutAnimation? = NVActivityIndicatorView.DEFAULT_FADE_OUT_ANIMATION) {
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating(fadeOutAnimation)
     }
 }

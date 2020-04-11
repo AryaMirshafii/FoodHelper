@@ -9,6 +9,7 @@
 
 ## Features
 
+- Support swift 4, 4.2 and 5 and latest Xcode
 - Able to give CSV file name, headers and rows using property keys.
 - Able to convert JSON string into CSV.
 - Able to Read the CSV file and convert to NSDictionary.
@@ -20,9 +21,26 @@
 - Handled the punctuation(\n, \t, \t, and ,) characters in CSV file.
 
 
+## Swift Version
+
+Supported swift 4, 4.2 and 5 and latest Xcode
+
+```swift
+
+pod 'SwiftCSVExport' , '= 2.0.2' // Swift 4
+pod 'SwiftCSVExport' , '= 2.0.3' // Swift 4.2
+pod 'SwiftCSVExport' , '= 2.3.0' // Swift 5
+
+
+```
+
 ## iOS/MacOS import headers
 
 First thing is to import the framework. See the Installation instructions on how to add the framework to your project.
+
+Refer iOS Examples:[Here](https://github.com/vigneshuvi/SwiftCSVExport/tree/master/Examples).
+Refer Mac Examples:[Here](https://github.com/vigneshuvi/SwiftCSVExport/tree/master/Examples/MacOS).
+
 
 ```swift
 
@@ -32,8 +50,11 @@ First thing is to import the framework. See the Installation instructions on how
 //iOS - Swift
 import SwiftCSVExport
 
-//macOS
-import SwiftCSVExportOSX
+//macOS - Old swift version < 4
+import SwiftCSVExportOSX 
+
+//macOS - New swift version > 4
+import SwiftCSVExport
 
 ```
 

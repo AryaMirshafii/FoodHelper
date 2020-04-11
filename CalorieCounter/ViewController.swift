@@ -12,16 +12,15 @@ import CameraManager
 import CoreML
 import SwiftyJSON
 import NVActivityIndicatorView
-import SideMenu
+import SideMenuSwift
 
 
 class ViewController: UIViewController , UIPopoverPresentationControllerDelegate {
 
-    @IBOutlet weak var predictionLabel: UILabel!
     
     @IBOutlet weak var progressView: NVActivityIndicatorView!
     
-    @IBOutlet weak var previewView: UIView!
+    
     
     
     
@@ -29,6 +28,10 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     private var currentFood:FoodItem!
     
     @IBOutlet weak var takePhotoButton: UIButton!
+    
+    
+    @IBOutlet weak var cameraView: UIView!
+    
     private let cameraManager = CameraManager()
     private var model: Food101!
     private var apiManager = APIManager()
@@ -44,38 +47,23 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         initCamera()
-        predictionLabel.text = "";
         model = Food101()
-        setupSideMenu()
+        //setupSideMenu()
         self.navigationController?.navigationBar.backItem?.title = "TEXT1"
         
         
+        if(dataManager.foodTableIsEmpty()){
+            dataManager.createDummyData()
+        }
         
-        dataManager.createDummyData()
+        takePhotoButton.isHidden = false;
+        
+        definesPresentationContext = true
         
         
     }
     
-    
-    func setupSideMenu() {
-        // Define the menus
-        SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
-        //SideMenuManager.default.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? UISideMenuNavigationController
-        
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        
-        
-        
-        
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        // Set up a cool background image for demo purposes
-        //SideMenuManager.default.menuAnimationBackgroundColor = UIColor(patternImage: UIImage(named: "background")!)
-    }
+
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -91,7 +79,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
             return
             
         }
-        self.predictionLabel.text = ""
+    
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
             // Do something with the image
             
@@ -137,7 +125,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
                 return
             }
             print("I think this is a \(prediction.classLabel)")
-            self.predictionLabel.text = "\(prediction.classLabel)"
+            
             self.getFoodInfo(foodName: prediction.classLabel)
  
         })
@@ -157,7 +145,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     //Initializes the camera
     private func initCamera(){
         
-        cameraManager.addPreviewLayerToView(self.previewView)
+        cameraManager.addPreviewLayerToView(self.cameraView)
         cameraManager.writeFilesToPhoneLibrary = false
     }
     
@@ -197,6 +185,7 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*
         if segue.identifier == "showPopup"{
             
             
@@ -229,35 +218,23 @@ class ViewController: UIViewController , UIPopoverPresentationControllerDelegate
                 
             }
         }
+        */
     }
     
     
     
     
     
-
+    
+    
+    
+    @IBAction func sideBarComeOut(_ sender: Any) {
+        
+        
+    }
+    
 
 
 }
 
-
-extension ViewController: UISideMenuNavigationControllerDelegate {
-    
-    func sideMenuWillAppear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
-    }
-    
-    func sideMenuDidAppear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appeared! (animated: \(animated))")
-    }
-    
-    func sideMenuWillDisappear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
-    }
-    
-    func sideMenuDidDisappear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappeared! (animated: \(animated))")
-    }
-    
-}
 

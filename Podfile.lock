@@ -1,34 +1,44 @@
 PODS:
-  - Alamofire (4.7.2)
-  - CameraManager (4.2.1)
-  - Charts (3.1.1):
-    - Charts/Core (= 3.1.1)
-  - Charts/Core (3.1.1)
-  - NVActivityIndicatorView (4.2.1):
-    - NVActivityIndicatorView/Presenter (= 4.2.1)
-  - NVActivityIndicatorView/Presenter (4.2.1)
-  - SideMenu (4.0.0)
-  - SwiftCSVExport (2.0.1)
-  - SwiftyJSON (4.1.0)
+  - Alamofire (5.1.0)
+  - CameraManager (5.1.0)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - SideMenuSwift (2.0.5)
+  - SwiftCSVExport (2.3.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CameraManager
   - Charts
   - NVActivityIndicatorView
-  - SideMenu
+  - SideMenuSwift
   - SwiftCSVExport
   - SwiftyJSON
 
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CameraManager
+    - Charts
+    - NVActivityIndicatorView
+    - SideMenuSwift
+    - SwiftCSVExport
+    - SwiftyJSON
+
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  CameraManager: 4749629345b651d11c8bc60cc0d5fbea2c61b1ef
-  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
-  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
-  SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
-  SwiftCSVExport: a2baa3904699e9d5b66dc1a15111d8172ade84dc
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  CameraManager: aa1386552b3c0a643225a8b7d98703d45d909ff2
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  SideMenuSwift: c7d99c270e0fad922a14b81f1dcc7a84c764bcd5
+  SwiftCSVExport: cede8b2125f107a4d5ef38db23791383b852992d
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 1b7937771edd81e40b71659f15f2b1c507de2c97
+PODFILE CHECKSUM: dc54e337e42800a86882ff9b8c512020b421bdae
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.8.4
